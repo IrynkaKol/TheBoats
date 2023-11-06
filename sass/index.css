@@ -1,0 +1,150 @@
+@import "~node_modules/modern-normalize/modern-normalize.css";
+:root {
+  --beige: #faf7f0;
+  --white: #ffffff;
+  --black1: #151515;
+  --black2: #000000;
+  --greyWarm: #3f3f3f;
+  --greyGold: rgba(21, 21, 21, 0.4);
+  --darkBlue: #171044;
+  --red: #9a1a1a;
+  --blue: #0c21c1;
+  /*fonts*/
+  --main-font: "Poppins", sans-serif;
+  --secondary-font: "Inter Tight", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 1920px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--main-font);
+  background-color: var(--beige);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
+  height: 233px;
+  padding: 0px 102px;
+  align-items: center;
+  gap: 195px;
+  border-bottom: 1px solid var(--black-1, #151515);
+  background-color: var(--Beige);
+}
+.header :before,
+.header :after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header__logo {
+  width: 255px;
+  height: 97px;
+  flex-shrink: 0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-item {
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.44px;
+  text-transform: uppercase;
+}
+
+.header-link {
+  color: var(--Black2);
+}
+.header-link:hover, .header-link:focus {
+  color: #fbaa19;
+}
+
+.header-social {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.icon {
+  fill: var(--black1);
+  width: 36px;
+  height: 36px;
+}
+
+.icon:hover {
+  fill: #fbaa19;
+}/*# sourceMappingURL=index.css.map */

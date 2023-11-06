@@ -1,0 +1,61 @@
+// Body Text, 22PX TEXT
+
+@mixin font-styles-body {
+  font-family: var(--main-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.44px;
+  text-transform: uppercase;
+}
+
+//Heading2/20px Text Example/Bold
+@mixin font-styles-title {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+//Body Text, 38 Px Text Example
+@mixin font-styles-text-38 {
+  font-family: var(--main-font);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.76px;
+
+  text-align: center;
+}
+// Primery/Size=Normal
+@mixin main-btn-styles {
+  display: flex;
+  padding: 14px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+
+  border-radius: 100px;
+  border: 1px solid var(--black1);
+
+  background: var(--black1);
+}
+
+// Outline/Size=Normal
+@mixin second-btn-styles {
+  display: flex;
+  padding: 14px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+
+  border-radius: 100px;
+  border: 1px solid var(--white);
+}
