@@ -52,7 +52,6 @@
   }
 
   &__title {
-    // border: solid 3px red;
     color: var(--white);
     text-align: center;
 
@@ -72,65 +71,12 @@
     gap: 20px;
   }
   &__btn-main {
-    @include main-btn-styles;
-    @include font-styles-body;
     width: 287px;
     height: 72px;
-
-    color: var(--white);
-
-    &:hover {
-      border-radius: 100px;
-      border: 5px solid #777;
-      background: #282828;
-    }
-
-    &:active {
-      border: 5px solid #777;
-      background: #0a091f;
-    }
-
-    &:focus {
-      border: 5px solid #777;
-
-      background: var(--black1);
-    }
-    &:disabled {
-      border: 1px solid rgba(21, 21, 21, 0.3);
-      background: rgba(21, 21, 21, 0.3);
-    }
   }
 
   &__btn-second {
-    @include second-btn-styles;
-    @include font-styles-body;
     width: 287px;
     height: 72px;
-
-    color: var(--white);
-
-    &:hover {
-      border: 5px solid var(--white);
-    }
-
-    &:active {
-      border: 5px solid #ffa400;
-      background: #eee;
-
-      color: var(--black1);
-    }
-
-    &:focus {
-      border: 5px solid #ffa400;
-      background: #fdfdfd;
-
-      color: var(--black1);
-    }
-
-    &:disabled {
-      border: 5px solid rgba(21, 21, 21, 0.3);
-
-      color: rgba(21, 21, 21, 0.3);
-    }
   }
 }
