@@ -873,6 +873,9 @@ footer {
   fill: var(--white);
   stroke: var(--black2);
 }
+.footer__icon:hover, .footer__icon:focus {
+  fill: #fbaa19;
+}
 
 .footer__rights-list {
   display: flex;
