@@ -403,6 +403,10 @@ path {
   justify-content: center;
   align-items: center;
 }
+.about__slider-left:hover, .about__slider-left:focus, .about__slider-right:hover, .about__slider-right:focus {
+  fill: #fbaa19;
+  border: 2px solid #fbaa19;
+}
 .about__slider-icon {
   width: 34px;
   height: 34px;

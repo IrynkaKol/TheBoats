@@ -111,7 +111,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover,
+    &:focus {
+      fill: #fbaa19;
+      border: 2px solid #fbaa19;
+    }
   }
+
   &__slider-icon {
     width: 34px;
     height: 34px;
