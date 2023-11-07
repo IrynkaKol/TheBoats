@@ -15,14 +15,7 @@
     text-align: center;
     font-feature-settings: "salt" on;
 
-    /* Heading2/20px Text Example/Bold */
-    font-family: var(--secondary-font);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 3.2px;
-    text-transform: uppercase;
+    @include font-styles-title;
   }
 
   &__title-text {
@@ -31,13 +24,7 @@
     color: var(--black2);
     text-align: center;
 
-    /* Body Text, 38 Px Text Example */
-    font-family: var(--main-font);
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.76px;
+    @include font-styles-text-38;
   }
 
   &__content-list {

@@ -609,7 +609,6 @@ path {
   color: var(--grayWarm);
   text-align: center;
   font-feature-settings: "salt" on;
-  /* Heading2/20px Text Example/Bold */
   font-family: var(--secondary-font);
   font-size: 20px;
   font-style: normal;
@@ -622,13 +621,13 @@ path {
   width: 1471px;
   color: var(--black2);
   text-align: center;
-  /* Body Text, 38 Px Text Example */
   font-family: var(--main-font);
   font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.76px;
+  text-align: center;
 }
 .contacts__content-list {
   display: flex;
@@ -696,7 +695,6 @@ path {
   color: var(--grayWarm);
   text-align: center;
   font-feature-settings: "salt" on;
-  /* Heading2/20px Text Example/Bold */
   font-family: var(--secondary-font);
   font-size: 20px;
   font-style: normal;
@@ -831,7 +829,7 @@ footer {
   flex-shrink: 0;
   color: var(--white);
   /* Body Text,20Px Text Example/Medium */
-  font-family: Poppins;
+  font-family: var(--main-font);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;

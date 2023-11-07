@@ -6,14 +6,7 @@
     text-align: center;
     font-feature-settings: "salt" on;
 
-    /* Heading2/20px Text Example/Bold */
-    font-family: var(--secondary-font);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 3.2px;
-    text-transform: uppercase;
+    @include font-styles-title;
   }
   &__wrap {
     display: flex;
