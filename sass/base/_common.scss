@@ -31,6 +31,9 @@ body {
   line-height: 1.5;
   font-family: var(--main-font);
   background-color: var(--beige);
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
 }
 
 main {

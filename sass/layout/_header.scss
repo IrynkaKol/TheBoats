@@ -7,14 +7,14 @@
   align-items: center;
   gap: 195px;
 
-  border-bottom: 1px solid var(--black-1, #151515);
+  border-bottom: 1px solid var(--black1);
   :before,
   :after {
     box-sizing: border-box;
     margin: 0;
   }
 
-  background-color: var(--Beige);
+  background-color: var(--beige);
 }
 .header__logo {
   width: 255px;
@@ -34,7 +34,7 @@
 }
 
 .header-link {
-  color: var(--Black2);
+  color: var(--black2);
 
   &:hover,
   &:focus {

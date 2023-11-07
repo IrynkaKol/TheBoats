@@ -1,41 +1,71 @@
 footer {
   display: flex;
-  width: 1920px;
+  max-width: 1920px;
+  height: 149px;
+  padding: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 140px;
 
   border-radius: 20px 20px 0px 0px;
-  border: 3px solid var(--black1);
+  border: 1px solid var(--black1);
   background: var(--black1);
+}
 
-  &__container {
-    display: flex;
-    width: 1920px;
-    height: 349px;
-    padding: 100px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-  }
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
 
-  &__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-  }
+.footer__subscribe {
+  display: flex;
+  width: 355px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
-  &__subscribe {
-  }
+.footer__list {
+  display: flex;
+  height: 36px;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer__message {
+  display: flex;
+  width: 158px;
+  align-items: center;
+  gap: 48px;
 
-  &__rights {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 121px;
-  }
+  white-space: nowrap;
+
+  flex-shrink: 0;
+
+  color: var(--white);
+
+  /* Body Text,20Px Text Example/Medium */
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 22px */
+  letter-spacing: -0.4px;
+}
+
+.footer__icon {
+  width: 36px;
+  height: 36px;
+  fill: var(--white);
+  stroke: var(--black2);
+}
+
+.footer__rights-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 121px;
+  color: var(--white);
 }
