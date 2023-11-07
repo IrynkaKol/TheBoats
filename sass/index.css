@@ -89,6 +89,13 @@ path {
   stroke: inherit;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -283,12 +290,6 @@ path {
   color: rgba(21, 21, 21, 0.3);
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 100px;
-}
 .about__description {
   display: flex;
   width: 1920px;
@@ -463,12 +464,6 @@ path {
   line-height: normal;
 }
 
-.suites {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 100px;
-}
 .suites__wrap {
   display: flex;
   flex-direction: column;
@@ -626,11 +621,7 @@ path {
 }
 
 .contacts {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 100px;
 }
 .contacts__title-wrap {
   display: flex;
@@ -725,12 +716,6 @@ path {
   height: 47px;
 }
 
-.subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 100px;
-}
 .subscribe__title {
   width: 520px;
   color: var(--grayWarm);
@@ -875,7 +860,7 @@ footer {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 110%; /* 22px */
+  line-height: 1.1;
   letter-spacing: -0.4px;
 }
 
