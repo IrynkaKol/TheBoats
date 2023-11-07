@@ -1,0 +1,115 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  
+    &__title-wrap {
+      display: flex;
+      //width: 1920px;
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+    }
+    &__title {
+      width: 520px;
+  
+      color: var(--grayWarm);
+      text-align: center;
+      font-feature-settings: 'salt' on;
+  
+      /* Heading2/20px Text Example/Bold */
+      font-family: var(--secondary-font);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: 3.2px;
+      text-transform: uppercase;
+    }
+  
+    &__title-text {
+      width: 1471px;
+  
+      color: var(--black2);
+      text-align: center;
+  
+      /* Body Text, 38 Px Text Example */
+      font-family: var(--main-font);
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.76px;
+    }
+  
+    &__content-list {
+      display: flex;
+      padding: 100px;
+      justify-content: center;
+  
+      align-items: flex-end;
+      justify-content: center;
+      align-items: center;
+      gap: 206px;
+    }
+  
+    &__content-item {
+      display: flex;
+      height: 187px;
+      padding-bottom: 20px;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 68px;
+      align-items: stretch;
+      height: 100%;
+  
+      border-bottom: 1px solid var(--black1);
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      height: 187px;
+      gap: 68px;
+    }
+    &__content-title {
+      width: 57px;
+      height: 71px;
+      flex-shrink: 0;
+  
+      color: var(--grayWarm);
+      font-feature-settings: 'salt' on;
+  
+      /* Heading/16px Text Example/Medium */
+      font-family: var(--secondary-font);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: -0.32px;
+    }
+  
+    &__content-text {
+      width: 263px;
+  
+      color: var(--black2);
+      font-feature-settings: 'salt' on;
+  
+      /* Body Text, 22 Px Text Example/Medium */
+      font-family: var(--main-font);
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+  }
+  
+  .contacts__content-item:first-child .contacts__content-title {
+    height: 95px;
+  }
+  
+  .contacts__content-title.contact__adress {
+    height: 47px;
+  }

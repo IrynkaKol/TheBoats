@@ -1,0 +1,163 @@
+.suites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  &__wrap-title {
+    display: flex;
+    width: 1920px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+  &__title {
+    @include font-styles-title;
+    width: 520px;
+
+    color: var(--grayWarm);
+    text-align: center;
+    font-feature-settings: "salt" on;
+  }
+  &__text {
+    @include font-styles-text-38;
+    width: 1706px;
+
+    color: var(--black2);
+    text-align: center;
+  }
+
+  &__frame {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1357px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    display: flex;
+    position: relative;
+    height: 441px;
+    padding: 140px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 252px;
+
+    border-radius: 20px;
+    border: 1px solid var(--black1);
+  }
+
+  // &__text-info {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   gap: 38px;
+  // }
+
+  &__text-item {
+    width: 450px;
+    color: var(--grayWarm);
+    text-align: center;
+
+    /* Body Text, 28Px Text Example/Medium */
+    font-family: var(--main-font);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    font-variant: all-small-caps;
+
+    // display: flex;
+    //text-align: center;
+  }
+
+  &__tariff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  &__tariff-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 318px;
+
+    color: var(--black1);
+    text-align: center;
+    font-feature-settings: "salt" on;
+
+    /* Heading/48px Text Example/Bold */
+    font-family: var(--secondary-font);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+  }
+  &__tariff-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  &__tariff-text {
+    width: 222px;
+
+    color: var(--black2);
+    text-align: center;
+
+    /* Body Text, 28Px Text Example/Medium */
+    font-family: var(--main-font);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    // font-variant: all-small-caps;
+  }
+  &__tariff-btn {
+    @include main-btn-styles;
+    @include font-styles-body;
+    width: 240px;
+    height: 72px;
+
+    color: var(--white);
+  }
+}
+
+.suite__text-info--bulleted {
+  text-align: center;
+}
+
+.suite__text-info .suite__text-item {
+  white-space: nowrap;
+}
+
+.suite__text-info .suite__text-item::before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.suites .suite__text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 38px;
+}
