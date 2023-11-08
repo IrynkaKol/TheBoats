@@ -21,6 +21,18 @@ ol {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
 body,
 h1,
 h2,
@@ -782,6 +794,131 @@ path {
 
 .icon:hover {
   fill: #fbaa19;
+}
+
+.registration {
+  display: flex;
+  padding-top: 160px;
+  justify-content: center;
+  align-items: center;
+}
+.registration_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 160px;
+}
+.registration__frame {
+  display: flex;
+  width: 1920px;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.registration__page-path {
+  display: flex;
+  width: 1691px;
+  align-items: center;
+  gap: 16px;
+}
+.registration__page-path-home {
+  width: 51px;
+  height: 19px;
+  transform: rotate(-0.141deg);
+  flex-shrink: 0;
+  color: var(--greyGold);
+  font-feature-settings: "salt" on;
+  /* Heading/16px Text Example/Medium */
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.32px;
+}
+.registration__page-path-registration {
+  width: 93px;
+  height: 19px;
+  transform: rotate(-0.141deg);
+  flex-shrink: 0;
+  color: var(--black1);
+  font-feature-settings: "salt" on;
+  /* Heading/16px Text Example/Medium */
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.32px;
+}
+.registration__form {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.registration__text {
+  display: flex;
+  width: 431px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.registration__title {
+  color: var(--Black2, #000);
+  /* Body Text/30px Text Example/Medium */
+  font-family: var(--main-font);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.registration__message {
+  width: 325px;
+  color: var(--black2);
+  /* Body Text 16px Text Example/SemiBold */
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.registration__login-link {
+  color: #0c21c1;
+}
+.registration__form-label {
+  color: var(--gray-cold-40, rgba(21, 21, 21, 0.4));
+  /* Body Text 13px Text Example/Medium */
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.regisrtation__wrap {
+  border: 3px solid navy;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.registration__form-label {
+  color: var(--gray-cold-40, rgba(21, 21, 21, 0.4));
+  /* Body Text 13px Text Example/Medium */
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 footer {

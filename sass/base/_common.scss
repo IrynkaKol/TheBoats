@@ -6,6 +6,17 @@ ol {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
 body,
 h1,
 h2,
