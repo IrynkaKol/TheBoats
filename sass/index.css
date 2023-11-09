@@ -734,14 +734,6 @@ path {
   align-items: center;
   gap: 47px;
 }
-.subscribe__title {
-  display: flex;
-  width: 383px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
 .subscribe__info {
   color: var(--grayWarm);
   text-align: center;
