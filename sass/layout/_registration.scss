@@ -48,6 +48,11 @@
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -0.32px;
+
+    &:hover,
+    &:focus {
+      color: var(--black1);
+    }
   }
 
   &__page-path-registration {
@@ -56,7 +61,7 @@
     transform: rotate(-0.141deg);
     flex-shrink: 0;
 
-    color: var(--black1);
+    color: var(--greyGold);
     font-feature-settings: "salt" on;
 
     /* Heading/16px Text Example/Medium */
@@ -186,12 +191,13 @@
 .form__icon-wrap {
   display: flex;
   align-items: flex-end;
-  gap: 266px;
+  gap: 190px;
 }
 
 .form__input {
   color: var(--darkBlue);
   display: inline-block;
+  width: 200px;
 
   /* Body Text 16px Text Example/Regular */
   font-family: var(--main-font);
@@ -224,4 +230,8 @@
 
 .registration__login-link:focus {
   outline: none;
+}
+
+.registration__page-path-registration.activ {
+  color: var(--black1);
 }
