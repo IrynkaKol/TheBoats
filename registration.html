@@ -114,60 +114,102 @@
               action="registration.html"
             >
               <div class="registration__text">
-                <p class="registration__title">Sign in</p>
+                <strong class="registration__title">Sign in</strong>
                 <p class="registration__message">
                   If you already have an account register You can
                   <a class="registration__login-link" href="#">Login here !</a>
                 </p>
               </div>
               <div class="regisrtation__wrap">
-                <div class="">
-                  <label for="inputEmail1" class="regisrtation__form-label"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="inputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter your email address"
-                  />
-                </div>
-                <div class="">
-                  <label for="formGroupInput" class="regisrtation__form-label"
-                    >Username</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="formGroupInput"
-                    placeholder="Enter your User name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="inputPassword1" class="regisrtation__form-label"
-                    >Password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="inputPassword1"
-                    placeholder="Enter your Password"
-                  />
-                </div>
-                <div class="">
-                  <label for="inputPassword2" class="regisrtation__form-label"
-                    >Confrim Password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="inputPassword2"
-                    placeholder="Confrim your Password"
-                  />
-                </div>
+                <label class="form-wrap">
+                  <span class="form__label">Email</span>
+                  <div class="form__text-wrap">
+                    <span class="form__text">
+                      <svg class="form__icon" width="17" height="11">
+                        <use href="./sprite-icons.svg#icon-envelope"></use>
+                      </svg>
+                    
+                    <input
+                      class="form__input"
+                      id="inputEmail1"
+                      aria-describedby="emailHelp"
+                      type="email"
+                      name="email"
+                      autofocus
+
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+                </label>
+                <label class="form-wrap">
+                  <span class="form__label">Username </span>
+                  <div class="form__text-wrap">
+                    <span class="form__text">
+                      <svg class="form__icon" width="17" height="17">
+                        <use href="./sprite-icons.svg#icon-user"></use>
+                      </svg>
+
+                      <input
+                        class="form__input"
+                        id="formGroupInput"
+                        type="text"
+                        name="username"
+                        autofocus
+                        placeholder="Enter your User name"
+                      />
+                    </span>
+                  </div>
+                </label>
+                <label class="form-wrap">
+                  <span class="form__label">Password</span>
+                  <div class="form__text-wrap">
+                    <div class="form__icon-wrap ">
+                    <span class="form__text">
+                      <svg class="form__icon" width="17" height="17" >
+                        <use href="./sprite-icons.svg#icon-padlock"></use>
+                      </svg>
+                      <input
+                        class="form__input"
+                        id="inputPassword1"
+                        type="password"
+                        name="password"
+                        placeholder="Enter your Password"
+                      />
+                    </span>
+                    <svg class="form__icon-password" width="14" height="14">
+                      <use href="./sprite-icons.svg#icon-invisible"></use>
+                    </svg>
+                  </div>
+
+                  </div>
+                </label>
+                <label class="form-wrap">
+                  <span class="form__label">Confrim Password</span>
+                  <div class="form__text-wrap">
+                    <div class="form__icon-wrap">
+                    <span class="form__text">
+                      <svg class="form__icon" width="17" height="17" >
+                        <use href="./sprite-icons.svg#icon-padlock1"></use>
+                      </svg>
+
+                      <input
+                        class="form__input"
+                        id="inputPassword2"
+                        type="password"
+                        name="password"
+                        placeholder="Confrim your Password"
+                      />
+                    </span>
+                    <svg class="form__icon-password" width="14" height="14">
+                      <use href="./sprite-icons.svg#icon-invisible"></use>
+                    </svg>
+                  </div>
+                  </div>
+                </label>
               </div>
-              <button type="submit" class="btn btn-primary">log in</button>
+              <button type="submit" class="registration__button main-button">
+                log in
+              </button>
             </form>
           </div>
         </div>

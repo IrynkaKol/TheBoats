@@ -20,6 +20,10 @@ footer {
   gap: 60px;
 }
 
+.footer__logo {
+  fill: var(--white);
+}
+
 .footer__subscribe {
   display: flex;
   width: 355px;

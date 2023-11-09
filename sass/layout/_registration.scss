@@ -69,7 +69,6 @@
   }
 
   &__form {
-    border: 3px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -110,8 +109,20 @@
 
   &__login-link {
     color: #0c21c1;
+    cursor: pointer;
+    :hover,
+    :focus {
+      border-bottom: 1px solid #0c21c1;
+    }
   }
 
+  &__input-container {
+    border: 3px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
   &__form-label {
     color: var(--gray-cold-40, rgba(21, 21, 21, 0.4));
 
@@ -122,23 +133,95 @@
     font-weight: 500;
     line-height: normal;
   }
+
+  &__button {
+    width: 431px;
+    height: 62px;
+    gap: 10px;
+  }
 }
 
 .regisrtation__wrap {
-  border: 3px solid navy;
   display: flex;
+  width: 431px;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
 }
 
-.registration__form-label {
-  color: var(--gray-cold-40, rgba(21, 21, 21, 0.4));
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.form__label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--greyGold);
 
   /* Body Text 13px Text Example/Medium */
-  font-family: Poppins;
+  font-family: var(--main-font);
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.form__text-wrap {
+  display: flex;
+  width: 431px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--black2);
+}
+
+.form__text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form__icon-wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 266px;
+}
+
+.form__input {
+  color: var(--darkBlue);
+  display: inline-block;
+
+  /* Body Text 16px Text Example/Regular */
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form__input::placeholder {
+  color: var(--darkBlue);
+}
+
+.form__icon {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+.form__icon-password {
+  fill: #151515;
+  fill-opacity: 0.4;
+  flex-shrink: 0;
+}
+
+.registration__login-link:hover {
+  text-decoration: underline;
+  // border-bottom: 1px solid #0c21c1;
+}
+
+.registration__login-link:focus {
+  outline: none;
 }
