@@ -197,6 +197,7 @@
 .form__input {
   color: var(--darkBlue);
   display: inline-block;
+
   width: 200px;
 
   /* Body Text 16px Text Example/Regular */
@@ -225,7 +226,6 @@
 
 .registration__login-link:hover {
   text-decoration: underline;
-  // border-bottom: 1px solid #0c21c1;
 }
 
 .registration__login-link:focus {

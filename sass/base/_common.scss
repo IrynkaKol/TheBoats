@@ -79,6 +79,14 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+input[type="email"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
 path {
   fill: inherit;
   stroke: inherit;
