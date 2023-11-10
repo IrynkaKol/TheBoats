@@ -191,14 +191,13 @@
 .form__icon-wrap {
   display: flex;
   align-items: flex-end;
-  gap: 190px;
+  gap: 202px;
 }
 
 .form__input {
   color: var(--darkBlue);
   display: inline-block;
-
-  width: 200px;
+  width: 100%;
 
   /* Body Text 16px Text Example/Regular */
   font-family: var(--main-font);
