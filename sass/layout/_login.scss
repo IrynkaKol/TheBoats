@@ -289,19 +289,21 @@
 }
 
 .login__icon.login-google {
-  border: 2px solid var(--greyGold);
-  border-radius: 5px;
-  &:hover {
+  //   border: 2px solid var(--greyGold);
+  //   border-radius: 5px;
+  &:hover,
+  &:focus {
     border: 3px solid orange;
     border-radius: 50%;
   }
 }
 .login__icon.login-apple {
   fill: #283544;
-  border: 2px solid var(--greyGold);
-  border-radius: 5px;
-  &:hover {
-    fill: #0163e0;
+  //   border: 2px solid var(--greyGold);
+  //   border-radius: 5px;
+  &:hover,
+  &:focus {
+    // fill: #0163e0;
     border: 3px solid orange;
     border-radius: 50%;
   }
@@ -309,8 +311,9 @@
 .login__icon.facebook {
   padding-top: 2px;
   fill: #0163e0;
-  border: 2px solid var(--greyGold);
-  border-radius: 5px;
+
+  //   border: 2px solid var(--greyGold);
+  //   border-radius: 5px;
   &:hover,
   &:focus {
     border: 3px solid orange;
