@@ -1,19 +1,4 @@
 @charset "UTF-8";
-:root {
-  --beige: #faf7f0;
-  --white: #ffffff;
-  --black1: #151515;
-  --black2: #000000;
-  --greyWarm: #3f3f3f;
-  --greyGold: rgba(21, 21, 21, 0.4);
-  --darkBlue: #171044;
-  --red: #9a1a1a;
-  --blue: #0c21c1;
-  /*fonts*/
-  --main-font: "Poppins", sans-serif;
-  --secondary-font: "Inter Tight", sans-serif;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -324,6 +309,21 @@ template {
    */
 [hidden] {
   display: none;
+}
+
+:root {
+  --beige: #faf7f0;
+  --white: #ffffff;
+  --black1: #151515;
+  --black2: #000000;
+  --greyWarm: #3f3f3f;
+  --greyGold: rgba(21, 21, 21, 0.4);
+  --darkBlue: #171044;
+  --red: #9a1a1a;
+  --blue: #0c21c1;
+  /*fonts*/
+  --main-font: "Poppins", sans-serif;
+  --secondary-font: "Inter Tight", sans-serif;
 }
 
 ul,
