@@ -11,5 +11,4 @@ function togglePasswordVisibility() {
         }
     })
 }
-
-document.addEventListener('DOMContentLoaded', togglePasswordVisibility);
+ document.addEventListener('DOMContentLoaded', togglePasswordVisibility);
