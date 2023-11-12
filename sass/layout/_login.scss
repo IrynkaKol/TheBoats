@@ -100,8 +100,24 @@
 
 .form-invisible {
   display: flex;
+  position: relative;
 }
 
+.hide {
+  min-width: 14px;
+  height: 14px;
+
+  cursor: pointer;
+}
+
+.hide {
+  background: url(./../../images/invisible.svg) no-repeat center center;
+  background-size: contain;
+}
+.show {
+  background: url() no-repeat center center;
+  background-size: contain;
+}
 .form__frame-down {
   display: flex;
   flex-direction: column;
