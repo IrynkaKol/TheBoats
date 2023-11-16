@@ -18,16 +18,17 @@
   background-size: cover;
 
   height: 1064px;
-  // width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin: o auto;
 
   &__container {
     display: flex;
     max-width: 1163px;
     height: 669px;
 
-    // position: absolute;
-    // right: 363px;
-    // top: 197px;
+    position: absolute;
+
     background-image: linear-gradient(
         0deg,
         rgba(36, 36, 36, 0.4) 0%,
@@ -51,11 +52,6 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-
-    // position: absolute;
-    // left: 34px;
-
-    // bottom: 217px;
   }
 
   &__title {

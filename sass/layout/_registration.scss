@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
 
-  &_container {
+  &__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -181,14 +181,21 @@
   padding-bottom: 12px;
   border-bottom: 1px solid var(--black2);
 }
-
-.form__input:not(:placeholder-shown) + .form__text-wrap {
+.form__text-wrap.success {
   border-bottom: 1px solid var(--black2);
 }
 
-.form__input:placeholder-shown + .form__text-wrap {
+.form__text-wrap.error {
   border-bottom: 1px solid var(--red);
 }
+
+// .form__input:not(:placeholder-shown) + .form__text-wrap {
+//   border-bottom: 1px solid var(--black2);
+// }
+
+// .form__input:placeholder-shown + .form__text-wrap {
+//   border-bottom: 1px solid var(--red);
+// }
 
 .form__text {
   display: flex;
@@ -245,4 +252,73 @@
 
 .registration__page-path-registration.activ {
   color: var(--black1);
+}
+
+.error-message {
+  color: var(--red);
+
+  /* Body Text 12px Text Example/Regular */
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.success-frame {
+  display: flex;
+  width: 1920px;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.success-wrap {
+  display: flex;
+  width: 1691px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.success-text {
+  display: flex;
+  width: 271px;
+  padding: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  border-radius: 20px;
+  border: 1px solid var(--black1);
+  background: var(--beige);
+}
+
+.success-title {
+  width: 428px;
+
+  color: var(--black2);
+  text-align: center;
+
+  /* Body Text/30px Text Example/Medium */
+  font-family: var(--main-font);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-variant: all-small-caps;
+}
+
+.success-message {
+  width: 349px;
+  margin: 0;
+
+  color: var(--black2);
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }

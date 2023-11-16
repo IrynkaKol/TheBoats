@@ -106,7 +106,7 @@
     <main>
       <!-- Registration form -->
 
-      <div class="registration">
+      <div class="registration" id="registration">
         <div class="registration__container">
           <div class="registration__frame">
             <div class="registration__page-path">
@@ -118,9 +118,12 @@
               >
             </div>
             <form
-              class="registration__form"
-              metod="post"
-              action="registration.html"
+              class="registration__form form-container"
+              name="main"
+              id="add-form"
+              method="post"
+              action=""
+              novalidate
             >
               <div class="registration__text">
                 <strong class="registration__title">Sign in</strong>
@@ -145,16 +148,19 @@
                         id="inputEmail1"
                         aria-describedby="emailHelp"
                         type="email"
-                        name="email"
+                        name="inputEmail1"
                         autofocus
                         placeholder="Enter your email address"
+                        data-placeholder="Enter your email address"
                         autocomplete="off"
                         required
                       />
                     </span>
                   </div>
+                  <div class="error-message error" id="email-error"></div>
                 </label>
-                <label for="formGroupInput" class="form-wrap">
+
+                <label for="inputUsername" class="form-wrap">
                   <span class="form__label">Username </span>
                   <div class="form__text-wrap">
                     <span class="form__text">
@@ -164,17 +170,20 @@
 
                       <input
                         class="form__input"
-                        id="formGroupInput"
+                        id="inputUsername"
                         type="text"
-                        name="username"
+                        name="inputUsername"
                         autofocus
                         placeholder="Enter your User name"
+                        data-placeholder="Enter your User name"
                         autocomplete="off"
                         required
                       />
                     </span>
                   </div>
+                  <div class="error-message error" id="username-error"></div>
                 </label>
+
                 <label
                   for="passwordInput1"
                   class="form-wrap"
@@ -191,13 +200,13 @@
                           class="form__input"
                           id="passwordInput1"
                           type="password"
-                          name="password"
+                          name="passwordInput1"
                           placeholder="Enter your Password"
+                          data-placeholder="Enter your Password"
                           autocomplete="off"
                           required
                           minlength="6"
                           maxlength="12"
-                          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                           title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
                         />
                       </span>
@@ -209,14 +218,16 @@
                       ></span>
                     </div>
                   </div>
+                  <div class="error-message" id="password-error"></div>
                 </label>
+
                 <label
                   for="passwordInput2"
                   class="form-wrap"
                   id="inputPassword2"
                 >
-                  <span class="form__label">Confrim Password</span>
-                  <div class="form__text-wrap">
+                  <span class="form__label">Confirm Password</span>
+                  <div id="success" class="form__text-wrap">
                     <div class="form__icon-wrap">
                       <span class="form__text">
                         <svg class="form__icon" width="17" height="17">
@@ -227,8 +238,9 @@
                           class="form__input"
                           id="passwordInput2"
                           type="password"
-                          name="password"
+                          name="passwordInput2"
                           placeholder="Confrim your Password"
+                          data-placeholder="Confrim your Password"
                           autocomplete="off"
                           required
                         />
@@ -242,12 +254,44 @@
                       </span>
                     </div>
                   </div>
+                  <div class="error-message" id="confirm-password-error"></div>
                 </label>
               </div>
-              <button type="submit" class="registration__button main-button">
+              <button
+                type="submit"
+                class="registration__button main-button"
+                onsubmit="redirectToSuccessForm()"
+              >
                 log in
               </button>
             </form>
+          </div>
+        </div>
+      </div>
+      <div id="success-message" style="display: none" class="registration">
+        <div class="registration__container">
+          <div class="success-frame">
+            <div class="registration__page-path">
+              <a class="registration__page-path-home" href="index.html"
+                >Home /</a
+              >
+              <a class="registration__page-path-registration activ" href="#"
+                >Success form</a
+              >
+            </div>
+            <div class="success-wrap">
+              <div class="success-text">
+                <div class="success-title">Succes!</div>
+                <span>
+                  <svg width="64" height="64">
+                    <use href="./sprite-icons.svg#icon-check"></use>
+                  </svg>
+                </span>
+                <p class="success-message">
+                  Congratulations, you have successfully logged into the system!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -320,6 +364,9 @@
         </div>
       </footer>
     </main>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/validation.js"></script>
+    <script defer src="./js/form.js"></script>
     <script src="./js/password.js"></script>
   </body>
 </html>
