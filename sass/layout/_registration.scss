@@ -189,29 +189,40 @@
   border-bottom: 1px solid var(--red);
 }
 
-// .form__input:not(:placeholder-shown) + .form__text-wrap {
-//   border-bottom: 1px solid var(--black2);
-// }
-
-// .form__input:placeholder-shown + .form__text-wrap {
-//   border-bottom: 1px solid var(--red);
-// }
-
 .form__text {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.form__invisible {
-  display: flex;
-}
+// .form__invisible {
+//   display: flex;
+// }
 
 .form__icon-wrap {
   display: flex;
   align-items: flex-end;
-  gap: 202px;
+  justify-content: flex-end;
+  gap: 184px;
 }
+
+// .warning-email .form__icon-wrap {
+//   display: flex;
+//   align-items: center;
+//   gap: 184px;
+// }
+
+// .warning-username {
+//   display: flex;
+//   align-items: center;
+//   gap: 213px;
+// }
+
+// .warning-password {
+//   display: flex;
+//   align-items: center;
+//   gap: 221px;
+// }
 
 .form__input {
   color: var(--darkBlue);
@@ -321,4 +332,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.icon-warning {
+  width: 16px;
+  height: 16px;
 }

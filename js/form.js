@@ -3,6 +3,26 @@ function showError(elementId, errorMessage) {
     if (errorElement) {
         errorElement.innerText = errorMessage;
         errorElement.style.display = 'block';
+
+        // Отримуємо інпут, для якого відображаємо помилку
+        const inputElement = document.querySelector(`[name=${elementId.replace('-error', '')}]`);
+        if (inputElement) {
+            inputElement.classList.add('error-input');
+        }
+
+        // Показуємо іконку помилки
+        const iconWarning = document.getElementById(`warning-${elementId.replace('-error', '')}`);
+        if (iconWarning) {
+            iconWarning.style.display = 'inline-block';
+        }
+
+        // Приховуємо іконку приховування/показування пароля
+        const iconPasswordId = `icon-${passwordId.includes('inputPassword1') ? 'passp' : 'passh'}`;
+const iconPassword = document.getElementById(iconPasswordId);
+if (iconPassword) {
+    console.log(`elementId for ${iconPasswordId}:`, iconPasswordId);
+    iconPassword.parentNode.removeChild(iconPassword);
+}
     }
 }
 
@@ -11,6 +31,25 @@ function hideError(elementId) {
     if (errorElement) {
         errorElement.innerText = '';
         errorElement.style.display = 'none';
+
+        // Отримуємо інпут, для якого приховуємо помилку
+        const inputElement = document.querySelector(`[name=${elementId.replace('-error', '')}]`);
+        if (inputElement) {
+            inputElement.classList.remove('error-input');
+        }
+
+        // Приховуємо іконку помилки
+        const iconWarning = document.getElementById(`warning-${elementId.replace('-error', '')}`);
+        if (iconWarning) {
+            iconWarning.style.display = 'none';
+        }
+
+        // Приховуємо іконку приховування/показування пароля
+        const iconPassword = document.getElementById(`icon-${elementId.includes('password1') ? 'passp' : 'passh'}`);
+
+        if (iconPassword) {
+            iconPassword.style.display = 'none';
+        }
     }
 }
 
