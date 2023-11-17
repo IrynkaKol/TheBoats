@@ -16,13 +16,11 @@ function showError(elementId, errorMessage) {
             iconWarning.style.display = 'inline-block';
         }
 
-        // Приховуємо іконку приховування/показування пароля
-        const iconPasswordId = `icon-${passwordId.includes('inputPassword1') ? 'passp' : 'passh'}`;
-const iconPassword = document.getElementById(iconPasswordId);
-if (iconPassword) {
-    console.log(`elementId for ${iconPasswordId}:`, iconPasswordId);
-    iconPassword.parentNode.removeChild(iconPassword);
-}
+        // Ховаємо іконки приховування пароля
+        const hideableIcons = document.querySelectorAll('.hideable-icon');
+        hideableIcons.forEach(icon => {
+            icon.style.display = 'none';
+        });
     }
 }
 
@@ -44,11 +42,20 @@ function hideError(elementId) {
             iconWarning.style.display = 'none';
         }
 
-        // Приховуємо іконку приховування/показування пароля
-        const iconPassword = document.getElementById(`icon-${elementId.includes('password1') ? 'passp' : 'passh'}`);
+        // Приховуємо іконки приховування пароля
+        const hideableIcons = document.querySelectorAll('.hideable-icon');
+        hideableIcons.forEach(icon => {
+            icon.style.display = 'none';
+        });
 
-        if (iconPassword) {
-            iconPassword.style.display = 'none';
+        // Показуємо іконки приховування пароля, якщо немає помилок
+        const allErrors = document.querySelectorAll('.error-message');
+        const hasErrors = [...allErrors].some(error => error.style.display === 'block');
+        if (!hasErrors) {
+            const hideableIcons = document.querySelectorAll('.hideable-icon');
+            hideableIcons.forEach(icon => {
+                icon.style.display = 'inline-block';
+            });
         }
     }
 }
@@ -70,7 +77,8 @@ function validateField(fieldName, fieldValue) {
             showError(errorId, passwordError);
             break;
         case 'passwordInput2':
-            const confirmPasswordError = fieldValue === '' ? 'Field must not be empty' : validatePasswordConfirmation(document.getElementById('passwordInput1').value, fieldValue);
+            const password2 = document.getElementById('passwordInput2').value;
+            const confirmPasswordError = fieldValue === '' ? 'Field must not be empty' : validatePasswordConfirmation(password2, fieldValue);
             showError(errorId, confirmPasswordError);
             break;
         default:
@@ -79,7 +87,7 @@ function validateField(fieldName, fieldValue) {
 }
 
 document.getElementById('add-form').addEventListener('submit', function (e) {
-    e.preventDefault(); 
+    e.preventDefault();
 
     const email = document.getElementById('inputEmail1').value;
     const username = document.getElementById('inputUsername').value;
@@ -115,11 +123,12 @@ document.getElementById('add-form').addEventListener('submit', function (e) {
         hideError('password-error');
     }
 
-    if (password1 !== password2) {
-        showError('confirm-password-error', 'Passwords do not match');
+    const confirmPasswordError = validatePasswordConfirmation(password1, password2);
+    if (confirmPasswordError !== '') {
+        showError('confirm-error', confirmPasswordError);
         return false;
     } else {
-        hideError('confirm-password-error');
+        hideError('confirm-error');
     }
 
     // alert('Form is valid');
