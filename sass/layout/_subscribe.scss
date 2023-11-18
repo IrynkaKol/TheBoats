@@ -1,5 +1,11 @@
 .subscribe {
   &__title {
+    display: flex;
+    width: 383px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     width: 520px;
 
     color: var(--grayWarm);

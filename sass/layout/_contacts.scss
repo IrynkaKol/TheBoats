@@ -58,6 +58,7 @@
     gap: 68px;
   }
   &__content-title {
+    @include font-styles-heading-16;
     width: 57px;
     height: 71px;
     flex-shrink: 0;
@@ -65,14 +66,6 @@
 
     color: var(--grayWarm);
     font-feature-settings: "salt" on;
-
-    /* Heading/16px Text Example/Medium */
-    font-family: var(--secondary-font);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.32px;
   }
 
   &__content-text {

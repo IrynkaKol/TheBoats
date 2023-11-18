@@ -34,6 +34,7 @@
   }
 
   &__page-path-home {
+    @include font-styles-heading-16;
     width: 51px;
     height: 19px;
     transform: rotate(-0.141deg);
@@ -42,14 +43,6 @@
     color: var(--greyGold);
     font-feature-settings: "salt" on;
 
-    /* Heading/16px Text Example/Medium */
-    font-family: var(--secondary-font);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.32px;
-
     &:hover,
     &:focus {
       color: var(--black1);
@@ -57,6 +50,7 @@
   }
 
   &__page-path-registration {
+    @include font-styles-heading-16;
     width: 93px;
     height: 19px;
     transform: rotate(-0.141deg);
@@ -64,14 +58,6 @@
 
     color: var(--greyGold);
     font-feature-settings: "salt" on;
-
-    /* Heading/16px Text Example/Medium */
-    font-family: var(--secondary-font);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.32px;
   }
 
   &__form {

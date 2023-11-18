@@ -32,3 +32,13 @@
 
   text-align: center;
 }
+
+/* Heading/16px Text Example/Medium */
+@mixin font-styles-heading-16 {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.32px;
+}

@@ -109,6 +109,7 @@ path {
   stroke: inherit;
 }
 
+/* Heading/16px Text Example/Medium */
 .container {
   display: flex;
   flex-direction: column;
@@ -679,19 +680,18 @@ path {
   gap: 68px;
 }
 .contacts__content-title {
-  width: 57px;
-  height: 71px;
-  flex-shrink: 0;
-  margin: 0;
-  color: var(--grayWarm);
-  font-feature-settings: "salt" on;
-  /* Heading/16px Text Example/Medium */
   font-family: var(--secondary-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.32px;
+  width: 57px;
+  height: 71px;
+  flex-shrink: 0;
+  margin: 0;
+  color: var(--grayWarm);
+  font-feature-settings: "salt" on;
 }
 .contacts__content-text {
   width: 263px;
@@ -714,6 +714,12 @@ path {
 }
 
 .subscribe__title {
+  display: flex;
+  width: 383px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   width: 520px;
   color: var(--grayWarm);
   text-align: center;
@@ -831,37 +837,35 @@ path {
   gap: 16px;
 }
 .registration__page-path-home {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.32px;
   width: 51px;
   height: 19px;
   transform: rotate(-0.141deg);
   flex-shrink: 0;
   color: var(--greyGold);
   font-feature-settings: "salt" on;
-  /* Heading/16px Text Example/Medium */
+}
+.registration__page-path-home:hover, .registration__page-path-home:focus {
+  color: var(--black1);
+}
+.registration__page-path-registration {
   font-family: var(--secondary-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.32px;
-}
-.registration__page-path-home:hover, .registration__page-path-home:focus {
-  color: var(--black1);
-}
-.registration__page-path-registration {
   width: 93px;
   height: 19px;
   transform: rotate(-0.141deg);
   flex-shrink: 0;
   color: var(--greyGold);
   font-feature-settings: "salt" on;
-  /* Heading/16px Text Example/Medium */
-  font-family: var(--secondary-font);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -0.32px;
 }
 .registration__form {
   display: flex;
