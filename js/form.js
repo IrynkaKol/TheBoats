@@ -27,7 +27,16 @@ function showError(elementId, errorMessage) {
             iconWarning.style.display = 'inline-block';
         }
 
-        hideIcons(elementId);
+        // Перевіряємо, чи є помилка в полі пароля і ховаємо відповідну іконку
+        if (elementId.includes('password-error')) {
+            hideableIcons1.forEach(icon => {
+                icon.style.display = 'none';
+            });
+        } else if (elementId.includes('confirm-error')) {
+            hideableIcons2.forEach(icon => {
+                icon.style.display = 'none';
+            });
+        }
     }
 }
 
@@ -47,9 +56,19 @@ function hideError(elementId) {
             iconWarning.style.display = 'none';
         }
 
-        hideIcons(elementId);
+        // Якщо помилки в інших полях, показуємо всі іконки
+        if (!elementId.includes('password-error') && !elementId.includes('confirm-error')) {
+            hideableIcons1.forEach(icon => {
+                icon.style.display = 'inline-block';
+            });
+
+            hideableIcons2.forEach(icon => {
+                icon.style.display = 'inline-block';
+            });
+        }
     }
 }
+
 
 function hideIcons(elementId) {
     // Перевіряємо, чи є помилка в полі пароля і ховаємо відповідну іконку
