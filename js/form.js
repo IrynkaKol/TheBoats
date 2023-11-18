@@ -10,24 +10,32 @@ hideableIcons2.forEach((icon) => {
 });
 
 
-
 function showError(elementId, errorMessage) {
     const errorElement = document.getElementById(elementId);
     if (errorElement) {
         errorElement.innerText = errorMessage;
         errorElement.style.display = 'block';
 
-        const inputElement = document.querySelector(`[name=${elementId.replace('-error', '')}]`);
+        const inputElement = document.querySelector(`[id^=${elementId.replace('-error', '')}]`);
+        console.log(inputElement)
         if (inputElement) {
             inputElement.classList.add('error-input');
         }
 
         const iconWarning = document.getElementById(`warning-${elementId.replace('-error', '')}`);
+        console.log(iconWarning)
         if (iconWarning) {
             iconWarning.style.display = 'inline-block';
         }
 
-        // Перевіряємо, чи є помилка в полі пароля і ховаємо відповідну іконку
+        
+        const textWrap = inputElement.closest('.form-wrap').querySelector('.form__text-wrap');
+        console.log(textWrap);
+        if (textWrap) {
+            textWrap.classList.add('error');
+        }
+
+       
         if (elementId.includes('password-error')) {
             hideableIcons1.forEach(icon => {
                 icon.style.display = 'none';
@@ -46,7 +54,7 @@ function hideError(elementId) {
         errorElement.innerText = '';
         errorElement.style.display = 'none';
 
-        const inputElement = document.querySelector(`[name=${elementId.replace('-error', '')}]`);
+        const inputElement = document.querySelector(`[id^=${elementId.replace('-error', '')}]`);
         if (inputElement) {
             inputElement.classList.remove('error-input');
         }
@@ -54,6 +62,12 @@ function hideError(elementId) {
         const iconWarning = document.getElementById(`warning-${elementId.replace('-error', '')}`);
         if (iconWarning) {
             iconWarning.style.display = 'none';
+        }
+
+        const textWrap = inputElement.closest('.form-wrap').querySelector('.form__text-wrap');
+        console.log(textWrap);
+        if (textWrap) {
+            textWrap.classList.remove('error');
         }
 
         // Якщо помилки в інших полях, показуємо всі іконки
@@ -67,7 +81,52 @@ function hideError(elementId) {
             });
         }
     }
+
+    // Приховуємо помилки на всіх інших полях
+    hideableIcons1.forEach(icon => {
+        icon.style.display = 'inline-block';
+    });
+
+    hideableIcons2.forEach(icon => {
+        icon.style.display = 'inline-block';
+    });
 }
+
+
+// function hideError(elementId) {
+//     const errorElement = document.getElementById(elementId);
+//     if (errorElement) {
+//         errorElement.innerText = '';
+//         errorElement.style.display = 'none';
+
+//         const inputElement = document.querySelector(`[id^=${elementId.replace('-error', '')}]`);
+//         if (inputElement) {
+//             inputElement.classList.remove('error-input');
+//         }
+
+//         const iconWarning = document.getElementById(`warning-${elementId.replace('-error', '')}`);
+//         if (iconWarning) {
+//             iconWarning.style.display = 'none';
+//         }
+
+//         const textWrap = inputElement.closest('.form-wrap').querySelector('.form__text-wrap');
+//         console.log(textWrap);
+//         if (textWrap) {
+//             textWrap.classList.remove('error');
+//         }
+
+        
+//         if (!elementId.includes('password-error') && !elementId.includes('confirm-error')) {
+//             hideableIcons1.forEach(icon => {
+//                 icon.style.display = 'inline-block';
+//             });
+
+//             hideableIcons2.forEach(icon => {
+//                 icon.style.display = 'inline-block';
+//             });
+//         }
+//     }
+// }
 
 
 function hideIcons(elementId) {
