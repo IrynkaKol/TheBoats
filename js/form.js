@@ -9,110 +9,94 @@ hideableIcons2.forEach((icon) => {
   icon.style.display = "inline-block";
 });
 
-let errorPasswordField;
+
 
 function showError(elementId, errorMessage) {
-  const errorElement = document.getElementById(elementId);
-  if (errorElement) {
-    errorElement.innerText = errorMessage;
-    errorElement.style.display = "block";
+    const errorElement = document.getElementById(elementId);
+    if (errorElement) {
+        errorElement.innerText = errorMessage;
+        errorElement.style.display = 'block';
 
-    const inputElement = document.querySelector(
-      `[name=${elementId.replace("-error", "")}]`
-    );
-    if (inputElement) {
-      inputElement.classList.add("error-input");
+        const inputElement = document.querySelector(`[name=${elementId.replace('-error', '')}]`);
+        if (inputElement) {
+            inputElement.classList.add('error-input');
+        }
+
+        const iconWarning = document.getElementById(`warning-${elementId.replace('-error', '')}`);
+        if (iconWarning) {
+            iconWarning.style.display = 'inline-block';
+        }
+
+        hideIcons(elementId);
     }
-
-    const iconWarning = document.getElementById(
-      `warning-${elementId.replace("-error", "")}`
-    );
-    if (iconWarning) {
-      iconWarning.style.display = "inline-block";
-    }
-
-
-    
-    if (
-      elementId.includes("password-error") ||
-      elementId.includes("confirm-error")
-    ) {
-      hideableIcons1.forEach((icon) => {
-        icon.style.display = "none";
-      });
-
-      hideableIcons2.forEach((icon) => {
-        icon.style.display = "none";
-      });
-    }
-  }
 }
 
 function hideError(elementId) {
-  const errorElement = document.getElementById(elementId);
-  if (errorElement) {
-    errorElement.innerText = "";
-    errorElement.style.display = "none";
+    const errorElement = document.getElementById(elementId);
+    if (errorElement) {
+        errorElement.innerText = '';
+        errorElement.style.display = 'none';
 
-    const inputElement = document.querySelector(
-      `[name=${elementId.replace("-error", "")}]`
-    );
-    if (inputElement) {
-      inputElement.classList.remove("error-input");
+        const inputElement = document.querySelector(`[name=${elementId.replace('-error', '')}]`);
+        if (inputElement) {
+            inputElement.classList.remove('error-input');
+        }
+
+        const iconWarning = document.getElementById(`warning-${elementId.replace('-error', '')}`);
+        if (iconWarning) {
+            iconWarning.style.display = 'none';
+        }
+
+        hideIcons(elementId);
     }
+}
 
-    const iconWarning = document.getElementById(
-      `warning-${elementId.replace("-error", "")}`
-    );
-    if (iconWarning) {
-      iconWarning.style.display = "none";
+function hideIcons(elementId) {
+    // Перевіряємо, чи є помилка в полі пароля і ховаємо відповідну іконку
+    if (elementId.includes('password-error')) {
+        hideableIcons1.forEach(icon => {
+            icon.style.display = 'none';
+        });
+    } else if (elementId.includes('confirm-error')) {
+        hideableIcons2.forEach(icon => {
+            icon.style.display = 'none';
+        });
+    } else {
+        // Якщо помилки в інших полях, показуємо всі іконки
+        hideableIcons1.forEach(icon => {
+            icon.style.display = 'inline-block';
+        });
+
+        hideableIcons2.forEach(icon => {
+            icon.style.display = 'inline-block';
+        });
     }
-
-    console.log(hideableIcons1);
-    console.log(hideableIcons2);
-    const hideableIcons = document.querySelectorAll(`.hideable-icon-${elementId.charAt(elementId.length - 1)}`);
-    hideableIcons.forEach(icon => {
-        icon.style.display = 'inline-block'; 
-    });
-  }
 }
 
 function validateField(fieldName, fieldValue) {
-  const errorId = `${fieldName}-error`;
+    const errorId = `${fieldName}-error`;
 
-  switch (fieldName) {
-    case "inputEmail1":
-      const emailError =
-        fieldValue === ""
-          ? "Field must not be empty"
-          : validateEmail(fieldValue);
-      showError(errorId, emailError);
-      break;
-    case "inputUsername":
-      const usernameError =
-        fieldValue === ""
-          ? "Field must not be empty"
-          : validateUsername(fieldValue);
-      showError(errorId, usernameError);
-      break;
-    case "passwordInput1":
-      const passwordError =
-        fieldValue === ""
-          ? "Field must not be empty"
-          : validatePassword(fieldValue);
-      showError(errorId, passwordError);
-      break;
-    case "passwordInput2":
-      const password2 = document.getElementById("passwordInput2").value;
-      const confirmPasswordError =
-        fieldValue === ""
-          ? "Field must not be empty"
-          : validatePasswordConfirmation(password2, fieldValue);
-      showError(errorId, confirmPasswordError);
-      break;
-    default:
-      break;
-  }
+    switch (fieldName) {
+        case 'inputEmail1':
+            const emailError = fieldValue === '' ? 'Field must not be empty' : validateEmail(fieldValue);
+            showError(errorId, emailError);
+            break;
+        case 'inputUsername':
+            const usernameError = fieldValue === '' ? 'Field must not be empty' : validateUsername(fieldValue);
+            showError(errorId, usernameError);
+            break;
+        case 'passwordInput1':
+            const passwordError = fieldValue === '' ? 'Field must not be empty' : validatePassword(fieldValue);
+            showError(errorId, passwordError);
+            break;
+        case 'passwordInput2':
+            const password2 = document.getElementById('passwordInput2').value;
+            const confirmPasswordError = fieldValue === '' ? 'Field must not be empty' : validatePasswordConfirmation(password2, fieldValue);
+            showError(errorId, confirmPasswordError);
+            break;
+        default:
+            break;
+    }
 }
 
 document.getElementById("add-form").addEventListener("submit", function (e) {
