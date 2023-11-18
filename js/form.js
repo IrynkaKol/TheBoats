@@ -9,6 +9,8 @@ hideableIcons2.forEach((icon) => {
   icon.style.display = "inline-block";
 });
 
+let errorPasswordField;
+
 function showError(elementId, errorMessage) {
   const errorElement = document.getElementById(elementId);
   if (errorElement) {
@@ -29,6 +31,8 @@ function showError(elementId, errorMessage) {
       iconWarning.style.display = "inline-block";
     }
 
+
+    
     if (
       elementId.includes("password-error") ||
       elementId.includes("confirm-error")
@@ -66,12 +70,9 @@ function hideError(elementId) {
 
     console.log(hideableIcons1);
     console.log(hideableIcons2);
-    hideableIcons1.forEach((icon) => {
-      icon.style.display = "inline-block";
-    });
-
-    hideableIcons2.forEach((icon) => {
-      icon.style.display = "inline-block";
+    const hideableIcons = document.querySelectorAll(`.hideable-icon-${elementId.charAt(elementId.length - 1)}`);
+    hideableIcons.forEach(icon => {
+        icon.style.display = 'inline-block'; 
     });
   }
 }
