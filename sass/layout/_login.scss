@@ -27,6 +27,7 @@
 }
 
 .login__page-path-home {
+  @include font-styles-heading-16;
   width: 51px;
   height: 19px;
   transform: rotate(-0.141deg);
@@ -35,20 +36,13 @@
   color: var(--greyGold);
   font-feature-settings: "salt" on;
 
-  /* Heading/16px Text Example/Medium */
-  font-family: var(--secondary-font);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -0.32px;
-
   &:hover,
   &:focus {
     color: var(--black1);
   }
 }
 .login__page-path-login {
+  @include font-styles-heading-16;
   width: 93px;
   height: 19px;
   transform: rotate(-0.141deg);
@@ -56,13 +50,6 @@
 
   color: var(--greyGold);
   font-feature-settings: "salt" on;
-
-  /* Heading/16px Text Example/Medium */
-  font-family: var(--secondary-font);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.1;
 }
 .login__page-path-login.activ {
   color: var(--black1);
@@ -137,14 +124,9 @@
 }
 
 .form__remember-link {
+  @include font-styles-body-12;
   color: var(--grayWarm);
 
-  /* Body Text 12px Text Example/Regular */
-  font-family: var(--main-font);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   &:hover {
     color: #0c21c1;
     text-decoration: underline;
@@ -168,14 +150,8 @@
   background: var(--white);
 }
 .form__checkbox-content {
+  @include font-styles-body-12;
   color: var(--gray-warm, #3f3f3f);
-
-  /* Body Text 12px Text Example/Regular */
-  font-family: Poppins;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 .login__title {
   color: var(--black2);

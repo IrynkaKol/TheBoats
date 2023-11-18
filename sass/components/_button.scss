@@ -1,18 +1,17 @@
 .main-button {
   @include font-styles-body;
-  display: flex;
   padding: 14px 26px;
+
+  border-radius: 100px;
+  border: 1px solid var(--black1);
+  background: var(--black1);
+  color: var(--white);
+
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 6px;
   flex-shrink: 0;
-
-  border-radius: 100px;
-  border: 1px solid var(--black1);
-
-  background: var(--black1);
-
-  color: var(--white);
 
   &:hover {
     border-radius: 100px;

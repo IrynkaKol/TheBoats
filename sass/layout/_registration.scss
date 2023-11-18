@@ -235,14 +235,8 @@
 }
 
 .error-message {
+  @include font-styles-body-12;
   color: var(--red);
-
-  /* Body Text 12px Text Example/Regular */
-  font-family: var(--main-font);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .success-frame {

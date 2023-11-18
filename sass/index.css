@@ -110,13 +110,14 @@ path {
 }
 
 /* Heading/16px Text Example/Medium */
+/* Body Text 12px Text Example/Regular */
 .container {
+  margin: 0 auto;
+  max-width: 1920px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 100px;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .main-button {
@@ -127,16 +128,16 @@ path {
   line-height: 1.1;
   letter-spacing: -0.44px;
   text-transform: uppercase;
-  display: flex;
   padding: 14px 26px;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
   border-radius: 100px;
   border: 1px solid var(--black1);
   background: var(--black1);
   color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
 }
 .main-button:hover {
   border-radius: 100px;
@@ -1033,13 +1034,12 @@ path {
 }
 
 .error-message {
-  color: var(--red);
-  /* Body Text 12px Text Example/Regular */
   font-family: var(--main-font);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: var(--red);
 }
 
 .success-frame {
@@ -1131,37 +1131,36 @@ path {
 }
 
 .login__page-path-home {
-  width: 51px;
-  height: 19px;
-  transform: rotate(-0.141deg);
-  flex-shrink: 0;
-  color: var(--greyGold);
-  font-feature-settings: "salt" on;
-  /* Heading/16px Text Example/Medium */
   font-family: var(--secondary-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.32px;
+  width: 51px;
+  height: 19px;
+  transform: rotate(-0.141deg);
+  flex-shrink: 0;
+  color: var(--greyGold);
+  font-feature-settings: "salt" on;
 }
 .login__page-path-home:hover, .login__page-path-home:focus {
   color: var(--black1);
 }
 
 .login__page-path-login {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.32px;
   width: 93px;
   height: 19px;
   transform: rotate(-0.141deg);
   flex-shrink: 0;
   color: var(--greyGold);
   font-feature-settings: "salt" on;
-  /* Heading/16px Text Example/Medium */
-  font-family: var(--secondary-font);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.1;
 }
 
 .login__page-path-login.activ {
@@ -1240,13 +1239,12 @@ path {
 }
 
 .form__remember-link {
-  color: var(--grayWarm);
-  /* Body Text 12px Text Example/Regular */
   font-family: var(--main-font);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: var(--grayWarm);
 }
 .form__remember-link:hover {
   color: #0c21c1;
@@ -1270,13 +1268,12 @@ path {
 }
 
 .form__checkbox-content {
-  color: var(--gray-warm, #3f3f3f);
-  /* Body Text 12px Text Example/Regular */
-  font-family: Poppins;
+  font-family: var(--main-font);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: var(--gray-warm, #3f3f3f);
 }
 
 .login__title {
