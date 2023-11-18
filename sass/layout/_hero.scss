@@ -18,8 +18,8 @@
   background-size: cover;
 
   height: 1064px;
-  width: 100%;
-  max-width: 1920px;
+  min-width: 1920px;
+
   margin: o auto;
 
   &__container {
