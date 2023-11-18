@@ -889,6 +889,7 @@ path {
 }
 .registration__message {
   width: 325px;
+  margin: 0;
   color: var(--black2);
   /* Body Text 16px Text Example/SemiBold */
   font-family: var(--main-font);
@@ -960,10 +961,6 @@ path {
   display: flex;
   width: 431px;
   padding-bottom: 12px;
-  border-bottom: 1px solid var(--black2);
-}
-
-.form__text-wrap.success {
   border-bottom: 1px solid var(--black2);
 }
 
@@ -1291,6 +1288,7 @@ path {
 
 .login__message {
   width: 325px;
+  margin: 0;
   color: var(--black2);
   /* Body Text 16px Text Example/SemiBold */
   font-family: var(--main-font);

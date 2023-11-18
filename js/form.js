@@ -17,20 +17,20 @@ function showError(elementId, errorMessage) {
         errorElement.style.display = 'block';
 
         const inputElement = document.querySelector(`[id^=${elementId.replace('-error', '')}]`);
-        console.log(inputElement)
+        
         if (inputElement) {
             inputElement.classList.add('error-input');
         }
 
         const iconWarning = document.getElementById(`warning-${elementId.replace('-error', '')}`);
-        console.log(iconWarning)
+        
         if (iconWarning) {
             iconWarning.style.display = 'inline-block';
         }
 
         
         const textWrap = inputElement.closest('.form-wrap').querySelector('.form__text-wrap');
-        console.log(textWrap);
+        
         if (textWrap) {
             textWrap.classList.add('error');
         }
@@ -65,7 +65,7 @@ function hideError(elementId) {
         }
 
         const textWrap = inputElement.closest('.form-wrap').querySelector('.form__text-wrap');
-        console.log(textWrap);
+        
         if (textWrap) {
             textWrap.classList.remove('error');
         }
@@ -92,41 +92,6 @@ function hideError(elementId) {
     });
 }
 
-
-// function hideError(elementId) {
-//     const errorElement = document.getElementById(elementId);
-//     if (errorElement) {
-//         errorElement.innerText = '';
-//         errorElement.style.display = 'none';
-
-//         const inputElement = document.querySelector(`[id^=${elementId.replace('-error', '')}]`);
-//         if (inputElement) {
-//             inputElement.classList.remove('error-input');
-//         }
-
-//         const iconWarning = document.getElementById(`warning-${elementId.replace('-error', '')}`);
-//         if (iconWarning) {
-//             iconWarning.style.display = 'none';
-//         }
-
-//         const textWrap = inputElement.closest('.form-wrap').querySelector('.form__text-wrap');
-//         console.log(textWrap);
-//         if (textWrap) {
-//             textWrap.classList.remove('error');
-//         }
-
-        
-//         if (!elementId.includes('password-error') && !elementId.includes('confirm-error')) {
-//             hideableIcons1.forEach(icon => {
-//                 icon.style.display = 'inline-block';
-//             });
-
-//             hideableIcons2.forEach(icon => {
-//                 icon.style.display = 'inline-block';
-//             });
-//         }
-//     }
-// }
 
 
 function hideIcons(elementId) {

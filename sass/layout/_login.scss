@@ -17,8 +17,6 @@
     height: 62px;
   }
 }
-.login__form {
-}
 
 .login__page-path {
   display: flex;
@@ -191,6 +189,7 @@
 
 .login__message {
   width: 325px;
+  margin: 0;
 
   color: var(--black2);
 

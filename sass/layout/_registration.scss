@@ -101,7 +101,7 @@
 
   &__message {
     width: 325px;
-
+    margin: 0;
     color: var(--black2);
 
     /* Body Text 16px Text Example/SemiBold */
@@ -205,24 +205,6 @@
   justify-content: flex-end;
   gap: 184px;
 }
-
-// .warning-email .form__icon-wrap {
-//   display: flex;
-//   align-items: center;
-//   gap: 184px;
-// }
-
-// .warning-username {
-//   display: flex;
-//   align-items: center;
-//   gap: 213px;
-// }
-
-// .warning-password {
-//   display: flex;
-//   align-items: center;
-//   gap: 221px;
-// }
 
 .form__input {
   color: var(--darkBlue);
