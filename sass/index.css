@@ -1102,6 +1102,10 @@ path {
   height: 16px;
 }
 
+.hidden {
+  display: none;
+}
+
 .login {
   display: flex;
   padding: 160px 0px 0.72px 0px;
