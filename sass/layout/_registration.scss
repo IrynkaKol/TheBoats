@@ -168,9 +168,6 @@
   padding-bottom: 12px;
   border-bottom: 1px solid var(--black2);
 }
-// .form__text-wrap.success {
-//   border-bottom: 1px solid var(--black2);
-// }
 
 .form__text-wrap.error {
   border-bottom: 1px solid var(--red);
@@ -182,15 +179,11 @@
   gap: 12px;
 }
 
-// .form__invisible {
-//   display: flex;
-// }
-
 .form__icon-wrap {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  gap: 184px;
+  gap: 200px;
 }
 
 .form__input {
