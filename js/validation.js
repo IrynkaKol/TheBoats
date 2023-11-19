@@ -29,7 +29,7 @@ function validatePassword(password) {
     if (password === '') {
         return 'Password is required';
     } else if (!passwordPattern.test(password)) {
-        return 'Invalid password format, password must contain numbers and letters, at least one letter must be uppercase';
+        return 'Invalid Password format, password must contain numbers and letters, at least one letter must be uppercase';
     } else {
         return ''; 
     }

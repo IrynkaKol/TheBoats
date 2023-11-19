@@ -1358,6 +1358,10 @@ path {
   border-bottom: 1px solid var(--black2);
 }
 
+.form-input.error {
+  border-bottom: 1px solid var(--red);
+}
+
 .form-control::-moz-placeholder {
   color: var(--darkBlue);
 }
@@ -1380,7 +1384,6 @@ path {
 .form-input-invisible {
   display: flex;
   align-items: flex-end;
-  gap: 226px;
   width: 100%;
 }
 

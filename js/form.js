@@ -70,7 +70,7 @@ function hideError(elementId) {
             textWrap.classList.remove('error');
         }
 
-        // Якщо помилки в інших полях, показуємо всі іконки
+        // If there are errors in other fields, show all the icons
         if (!elementId.includes('password-error') && !elementId.includes('confirm-error')) {
             hideableIcons1.forEach(icon => {
                 icon.style.display = 'inline-block';
@@ -82,7 +82,7 @@ function hideError(elementId) {
         }
     }
 
-    // Приховуємо помилки на всіх інших полях
+    // hide errors in all other fields
     hideableIcons1.forEach(icon => {
         icon.style.display = 'inline-block';
     });
@@ -95,7 +95,7 @@ function hideError(elementId) {
 
 
 function hideIcons(elementId) {
-    // Перевіряємо, чи є помилка в полі пароля і ховаємо відповідну іконку
+    // check whether there is an error in the password field and hide the corresponding icon
     if (elementId.includes('password-error')) {
         hideableIcons1.forEach(icon => {
             icon.style.display = 'none';
@@ -105,7 +105,7 @@ function hideIcons(elementId) {
             icon.style.display = 'none';
         });
     } else {
-        // Якщо помилки в інших полях, показуємо всі іконки
+        // If there are errors in other fields, show all the icons
         hideableIcons1.forEach(icon => {
             icon.style.display = 'inline-block';
         });

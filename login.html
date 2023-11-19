@@ -111,7 +111,14 @@
             <a class="login__page-path-home" href="index.html">Home /</a>
             <a class="login__page-path-login activ" href="#">Sign in</a>
           </div>
-          <form action="#" metod="post" class="login__form" name="secondary">
+          <form
+            action="#"
+            method="post"
+            name="secondary"
+            id="add-loginform"
+            class="login__form"
+            novalidate
+          >
             <div class="form__row">
               <div class="login__text">
                 <strong class="login__title">Sign in</strong>
@@ -134,14 +141,28 @@
                           </svg>
                           <input
                             type="email"
-                            name="email"
+                            name="inputEmail"
                             class="form-control"
                             id="inputEmail"
                             aria-describedby="emailHelp"
                             placeholder="Enter your email address"
+                            data-placeholder="Enter your email address"
                             autocomplete="off"
+                            autofocus
                           />
+                          <span
+                            class="icon-warning"
+                            style="display: none"
+                            id="warning-email1"
+                          >
+                            <svg width="16" height="16">
+                              <use
+                                xlink:href="./sprite-icons.svg#icon-warning"
+                              ></use>
+                            </svg>
+                          </span>
                         </div>
+                        <div class="error-message" id="email1-error"></div>
                       </label>
                     </div>
                     <div class="form__frame-down">
@@ -164,20 +185,38 @@
                                     </svg>
                                     <input
                                       type="password"
+                                      name="inputPassword"
                                       class="form-control"
                                       id="inputPassword"
                                       aria-describedby="passwordHelp"
                                       placeholder="Enter your Password"
+                                      data-placeholder="Enter your Password"
                                       autocomplete="off"
+                                      autofocus
                                     />
                                   </div>
                                   <span
-                                    class="hide"
+                                    class="hide hideable-icon"
                                     id="icon-pass"
                                     onclick="return togglePasswordVisibility(this)"
                                   ></span>
+                                  <span
+                                    class="icon-warning"
+                                    style="display: none"
+                                    id="warning-password1"
+                                  >
+                                    <svg width="16" height="16">
+                                      <use
+                                        xlink:href="./sprite-icons.svg#icon-warning"
+                                      ></use>
+                                    </svg>
+                                  </span>
                                 </div>
                               </div>
+                              <div
+                                class="error-message"
+                                id="passwordl-error"
+                              ></div>
                             </label>
                           </div>
                         </div>
@@ -322,6 +361,8 @@
         </div>
       </footer>
     </main>
+    <script src="./js/validation.js"></script>
+    <script defer src="./js/form-login.js"></script>
     <script src="./js/invisible.js"></script>
   </body>
 </html>

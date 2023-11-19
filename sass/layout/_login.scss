@@ -240,6 +240,10 @@
   border-bottom: 1px solid var(--black2);
 }
 
+.form-input.error {
+  border-bottom: 1px solid var(--red);
+}
+
 .form-control::placeholder {
   color: var(--darkBlue);
 }
@@ -253,7 +257,7 @@
 .form-input-invisible {
   display: flex;
   align-items: flex-end;
-  gap: 226px;
+  // gap: 226px;
   width: 100%;
 }
 .login-social {
