@@ -135,8 +135,8 @@
                 </p>
               </div>
               <div class="regisrtation__wrap">
-                <label for="inputEmail1" class="form-wrap">
-                  <span class="form__label">Email</span>
+                <div class="form-wrap">
+                  <label for="inputEmail1" class="form__label">Email</label>
                   <div class="form__text-wrap">
                     <div class="form__icon-wrap warning-email">
                       <span class="form__text">
@@ -171,10 +171,12 @@
                     </div>
                   </div>
                   <div class="error-message error" id="email-error"></div>
-                </label>
+                </div>
 
-                <label for="inputUsername" class="form-wrap">
-                  <span class="form__label">Username </span>
+                <div class="form-wrap">
+                  <label class="form__label" for="inputUsername"
+                    >Username
+                  </label>
                   <div class="form__text-wrap">
                     <div class="form__icon-wrap warning-username">
                       <span class="form__text">
@@ -202,14 +204,12 @@
                     </div>
                   </div>
                   <div class="error-message error" id="username-error"></div>
-                </label>
+                </div>
 
-                <label
-                  for="passwordInput1"
-                  class="form-wrap"
-                  id="inputPassword1"
-                >
-                  <span class="form__label">Password</span>
+                <div class="form-wrap" id="inputPassword1">
+                  <label class="form__label" for="passwordInput1"
+                    >Password</label
+                  >
                   <div class="form__text-wrap">
                     <div class="form__icon-wrap warning-password">
                       <span class="form__text">
@@ -252,14 +252,12 @@
                     </div>
                   </div>
                   <div class="error-message" id="password-error"></div>
-                </label>
+                </div>
 
-                <label
-                  for="passwordInput2"
-                  class="form-wrap"
-                  id="inputPassword2"
-                >
-                  <span class="form__label">Confirm Password</span>
+                <div class="form-wrap" id="inputPassword2">
+                  <label class="form__label" for="passwordInput2"
+                    >Confirm Password</label
+                  >
                   <div id="success" class="form__text-wrap">
                     <div class="form__icon-wrap warning-password">
                       <span class="form__text">
@@ -299,7 +297,7 @@
                     </div>
                   </div>
                   <div class="error-message" id="confirm-error"></div>
-                </label>
+                </div>
               </div>
               <button
                 type="submit"
