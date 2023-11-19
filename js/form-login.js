@@ -5,7 +5,7 @@ hideableIcons.forEach((icon) => {
 });
 
 function showError(elementId, errorMessage) {
- const errorElement = document.getElementById(elementId);
+  const errorElement = document.getElementById(elementId);
 
   if (errorElement) {
     errorElement.innerText = errorMessage;
@@ -21,36 +21,36 @@ function showError(elementId, errorMessage) {
     const iconWarning = document.getElementById(
       `warning-${elementId.replace("-error", "")}`
     );
-    console.log(`iconWarning for ${elementId}:`, iconWarning);
+    
     if (iconWarning) {
-        if (iconWarning.style.display === "none") {
-            iconWarning.style.display = "inline-block";
-          }
+      if (iconWarning.style.display === "none") {
+        iconWarning.style.display = "inline-block";
+      }
     }
 
     const textWrap = inputElement
       .closest(".form-wrap")
       .querySelector(".form-input");
-      console.log(`textWrap for ${elementId}:`, textWrap);
+    
     if (textWrap) {
       textWrap.classList.add("error");
     }
 
-    console.log('Hideable icons:', hideableIcons);
+    
     if (elementId.includes("passwordl-error")) {
-      hideableIcons.forEach(icon => {
+      hideableIcons.forEach((icon) => {
         icon.style.display = "none";
       });
       hideIcons(elementId);
-    } else { hideableIcons.forEach(icon => {
+    } else {
+      hideableIcons.forEach((icon) => {
         icon.style.display = "inline-block";
-      });}
-   
+      });
+    }
   }
 }
 
 function hideError(elementId) {
-    
   const errorElement = document.getElementById(elementId);
   if (errorElement) {
     errorElement.innerText = "";
@@ -66,7 +66,7 @@ function hideError(elementId) {
     const iconWarning = document.getElementById(
       `warning-${elementId.replace("-error", "")}`
     );
-    
+
     if (iconWarning) {
       iconWarning.style.display = "none";
     }
@@ -78,37 +78,29 @@ function hideError(elementId) {
       textWrap.classList.remove("error");
     }
 
-
-    if (!elementId.includes('passwordl-error')) {
-        hideableIcons.forEach(icon => {
-            icon.style.display = 'inline-block';
-        });
-
-       
+    if (!elementId.includes("passwordl-error")) {
+      hideableIcons.forEach((icon) => {
+        icon.style.display = "inline-block";
+      });
     }
   }
-  hideableIcons.forEach(icon => {
-    icon.style.display = 'inline-block';
-});
-
+  hideableIcons.forEach((icon) => {
+    icon.style.display = "inline-block";
+  });
 }
 
 function hideIcons(elementId) {
-    // console.log("ElementId in hideIcons:", elementId);
-    
     // check whether there is an error in the password field and hide the corresponding icon
-    if (elementId.includes('passwordl-error')) {
-        hideableIcons.forEach(icon => {
-            icon.style.display = 'none';
-        });
-    }  else {
-        // If there are errors in other fields, show all the icons
-        hideableIcons.forEach(icon => {
-            icon.style.display = 'inline-block';
-        });
-
-        
-    }
+  if (elementId.includes("passwordl-error")) {
+    hideableIcons.forEach((icon) => {
+      icon.style.display = "none";
+    });
+  } else {
+    // If there are errors in other fields, show the icons
+    hideableIcons.forEach((icon) => {
+      icon.style.display = "inline-block";
+    });
+  }
 }
 
 function validateFieldLogin(fieldName, fieldValue) {
@@ -140,11 +132,11 @@ document
   .getElementById("add-loginform")
   .addEventListener("submit", function (e) {
     e.preventDefault();
-    
 
     const email = document.getElementById("inputEmail").value;
     const password = document.getElementById("inputPassword").value;
     
+
 
     validateFieldLogin("inputEmail", email);
     validateFieldLogin("inputPassword", password);
@@ -152,13 +144,11 @@ document
     const emailError = validateEmail(email);
     if (emailError !== "") {
       showError("email1-error", emailError);
-      
+
       return false;
     } else {
       hideError("email1-error");
     }
-
-    
 
     const passwordError = validatePassword(password);
     if (passwordError !== "") {
@@ -168,11 +158,10 @@ document
       hideError("passwordl-error");
     }
 
-    
     alert("Form is valid");
   });
 
-  const inputs = document.querySelectorAll(".form-control");
+const inputs = document.querySelectorAll(".form-control");
 inputs.forEach((input) => {
   input.addEventListener("focus", function () {
     this.setAttribute("placeholder", "");
