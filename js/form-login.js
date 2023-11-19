@@ -158,7 +158,7 @@ document
       hideError("passwordl-error");
     }
 
-    alert("Form is valid");
+    alert("Log in success");
   });
 
 const inputs = document.querySelectorAll(".form-control");
