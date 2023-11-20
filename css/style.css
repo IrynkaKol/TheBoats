@@ -109,9 +109,7 @@ path {
   fill: inherit;
   stroke: inherit;
 }
-.wrapper {
-  min-width: 100%;
-}
+
 .container {
   margin: 0 auto;
   max-width: 1920px;
@@ -911,31 +909,32 @@ footer {
 }
 
 /* Registration */
-.registration {
+.registration-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.registration-frame {
   display: flex;
   padding-top: 160px;
   justify-content: center;
   align-items: center;
-  min-width: 1920px;
 }
-.registration__container {
+.registration-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 160px;
 }
-.registration__frame {
+.registration-content {
   display: flex;
+  width: 1920px;
   flex-direction: column;
   align-items: center;
   gap: 100px;
 }
-.registration__form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
-}
+
 .registration__page-path {
   display: flex;
   width: 1691px;
@@ -974,6 +973,7 @@ footer {
   color: var(--greyGold);
   font-feature-settings: "salt" on;
 }
+
 .registration__form {
   display: flex;
   flex-direction: column;
@@ -1212,15 +1212,28 @@ footer {
 }
 
 /* Login */
-.login {
+.login-wrapper {
+  display: inline-flex;
+  height: 1582px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.login-frame {
   display: flex;
   padding: 160px 0px 0.72px 0px;
   justify-content: center;
   align-items: center;
-  min-width: 1920px;
+  /* min-width: 1920px; */
 }
-.login__container {
+.login-container {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 160px;
+}
+.login-content {
+  display: flex;
+  width: 1920px;
   flex-direction: column;
   align-items: center;
   gap: 100px;
@@ -1552,4 +1565,147 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+/* Account */
+.account-wrapper {
+  display: inline-flex;
+  height: 3031px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.account-frame {
+  display: flex;
+  padding: 160px 0px 11px 0px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  background: var(--beige);
+}
+
+.account-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  margin: 0;
+}
+
+.account-header {
+  color: var(--greyWarm);
+  font-feature-settings: "salt" on;
+
+  /* Heading2/20px Text Example/Bold */
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.account-content {
+  display: flex;
+  width: 1920px;
+  /* height: 2516px; */
+  padding: 0px 105px 0px 115px;
+  flex-direction: column;
+  align-items: center;
+  gap: 160px;
+  margin: 0;
+}
+
+.account-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.account-item {
+  display: flex;
+  width: 1704px;
+  padding: 60px 91px;
+  align-items: flex-end;
+  gap: 419px;
+
+  border-radius: 20px;
+  border: 1px solid var(--black2);
+  background: var(--beige);
+}
+.account-item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.account-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+.account-item-header {
+  color: var(--greyGold);
+  font-feature-settings: "salt" on;
+
+  /* Heading/16px Text Example/Medium */
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.32px;
+  margin: 0;
+}
+
+.account-item-date {
+  color: var(--gray-cold-40, rgba(21, 21, 21, 0.4));
+  font-family: Inter Tight;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.account-item-message {
+  color: var(--black2);
+
+  /* Body Text, 38 Px Text Example */
+  font-family: var(--main-font);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.76px;
+}
+
+.account-item-status {
+  width: 201px;
+  height: 49px;
+  flex-shrink: 0;
+  color: var(--black2);
+
+  /* Body Text, 38 Px Text Example */
+  font-family: var(--main-font);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.76px;
+}
+
+.account-item-btn {
+  display: flex;
+  width: 240px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
 }

@@ -17,98 +17,98 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!--Header section-->
-    <header class="header">
-      <a class="header__logo" href="./index.html">
-        <svg width="255" height="97">
-          <use xlink:href="sprite-icons.svg#logo"></use>
-        </svg>
-      </a>
+    <div class="registration-wrapper">
+      <!--Header section-->
+      <header class="header">
+        <a class="header__logo" href="./index.html">
+          <svg width="255" height="97">
+            <use xlink:href="sprite-icons.svg#logo"></use>
+          </svg>
+        </a>
 
-      <ul class="header-nav">
-        <li class="header-item">
-          <a class="link header-link" href="/index.html#%23about"
-            >In-Person Boat Monitoring | IPM</a
-          >
-        </li>
-        <li class="header-item">
-          <a class="link header-link" href="/index.html#%23suites"
-            >Try or buy</a
-          >
-        </li>
-        <li class="header-item">
-          <a class="link header-link" href="/index.html#%23contacts"
-            >Contacts</a
-          >
-        </li>
-        <li class="header-item">
-          <a class="link header-link" href="#">Your gallery</a>
-        </li>
-      </ul>
-
-      <div>
-        <ul class="header-social">
-          <li>
-            <a
-              class="header-social__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="share"
+        <ul class="header-nav">
+          <li class="header-item">
+            <a class="link header-link" href="/index.html#%23about"
+              >In-Person Boat Monitoring | IPM</a
             >
-              <svg class="icon">
-                <use xlink:href="sprite-icons.svg#share"></use>
-              </svg>
-            </a>
           </li>
-          <li>
-            <a
-              class="header-social__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="instagram"
+          <li class="header-item">
+            <a class="link header-link" href="/index.html#%23suites"
+              >Try or buy</a
             >
-              <svg class="icon">
-                <use xlink:href="sprite-icons.svg#instagram"></use>
-              </svg>
-            </a>
           </li>
-          <li>
-            <a
-              class="header-social__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="youtobe"
+          <li class="header-item">
+            <a class="link header-link" href="/index.html#%23contacts"
+              >Contacts</a
             >
-              <svg class="icon">
-                <use xlink:href="sprite-icons.svg#youtobe"></use>
-              </svg>
-            </a>
           </li>
-          <li>
-            <a
-              class="header-social__link"
-              href="https://www.facebook.com/boatssafety"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="facebook"
-            >
-              <svg class="icon">
-                <use xlink:href="sprite-icons.svg#facebook"></use>
-              </svg>
-            </a>
+          <li class="header-item">
+            <a class="link header-link" href="#">Your gallery</a>
           </li>
         </ul>
-      </div>
-    </header>
-    <main>
-      <!-- Registration form -->
 
-      <div class="registration" id="registration">
-        <div class="registration__container">
-          <div class="registration__frame">
+        <div>
+          <ul class="header-social">
+            <li>
+              <a
+                class="header-social__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="share"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#share"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-social__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-social__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="youtobe"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#youtobe"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-social__link"
+                href="https://www.facebook.com/boatssafety"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Registration form -->
+      <div class="registration-frame">
+        <div class="registration-container" id="registration">
+          <div class="registration-content">
             <div class="registration__page-path">
               <a class="registration__page-path-home" href="index.html"
                 >Home /</a
@@ -307,105 +307,112 @@
                 sign up
               </button>
             </form>
-          </div>
-        </div>
-      </div>
-      <div id="success-message" style="display: none" class="registration">
-        <div class="registration__container">
-          <div class="success-frame">
-            <div class="registration__page-path">
-              <a class="registration__page-path-home" href="index.html"
-                >Home /</a
-              >
-              <a class="registration__page-path-registration activ" href="#"
-                >Success form</a
-              >
-            </div>
-            <div class="success-wrap">
-              <div class="success-text">
-                <div class="success-title">Success!</div>
-                <span>
-                  <svg width="64" height="64">
-                    <use href="./sprite-icons.svg#icon-check"></use>
-                  </svg>
-                </span>
-                <p class="success-message">
-                  Congratulations, you have successfully logged into the system!
-                </p>
+
+            <div
+              id="success-message"
+              style="display: none"
+              class="registration"
+            >
+              <div class="registration__container">
+                <div class="success-frame">
+                  <div class="registration__page-path">
+                    <a class="registration__page-path-home" href="index.html"
+                      >Home /</a
+                    >
+                    <a
+                      class="registration__page-path-registration activ"
+                      href="#"
+                      >Success form</a
+                    >
+                  </div>
+                  <div class="success-wrap">
+                    <div class="success-text">
+                      <div class="success-title">Success!</div>
+                      <span>
+                        <svg width="64" height="64">
+                          <use href="./sprite-icons.svg#icon-check"></use>
+                        </svg>
+                      </span>
+                      <p class="success-message">
+                        Congratulations, you have successfully logged into the
+                        system!
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!--Footer sectoin-->
+          <footer class="footer">
+            <div class="footer__content">
+              <a class="footer__logo" href="/index.html">
+                <svg width="128" height="49">
+                  <use xlink:href="sprite-icons.svg#logo-footer"></use>
+                </svg>
+              </a>
+
+              <div class="footer__subscribe">
+                <ul class="footer__list">
+                  <li>
+                    <a
+                      class="footer__link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"
+                    >
+                      <svg class="footer__icon">
+                        <use xlink:href="sprite-icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer__link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="youtobe"
+                    >
+                      <svg class="footer__icon">
+                        <use xlink:href="sprite-icons.svg#youtobe"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer__link"
+                      href="https://www.facebook.com/boatssafety"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"
+                    >
+                      <svg class="footer__icon">
+                        <use xlink:href="sprite-icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="footer__message">
+                  Subscribe to us <br />
+                  in social networks
+                </div>
+              </div>
+
+              <div class="footer__rights">
+                <ul class="footer__rights-list">
+                  <li>© The Boats all rights reserved</li>
+                  <li>Offer contract</li>
+                  <li>Privacy Policy</li>
+                </ul>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
-
-      <!--Footer sectoin-->
-      <footer class="footer">
-        <div class="footer__content">
-          <a class="footer__logo" href="/index.html">
-            <svg width="128" height="49">
-              <use xlink:href="sprite-icons.svg#logo-footer"></use>
-            </svg>
-          </a>
-
-          <div class="footer__subscribe">
-            <ul class="footer__list">
-              <li>
-                <a
-                  class="footer__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="instagram"
-                >
-                  <svg class="footer__icon">
-                    <use xlink:href="sprite-icons.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="footer__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="youtobe"
-                >
-                  <svg class="footer__icon">
-                    <use xlink:href="sprite-icons.svg#youtobe"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="https://www.facebook.com/boatssafety"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="facebook"
-                >
-                  <svg class="footer__icon">
-                    <use xlink:href="sprite-icons.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-
-            <div class="footer__message">
-              Subscribe to us <br />
-              in social networks
-            </div>
-          </div>
-
-          <div class="footer__rights">
-            <ul class="footer__rights-list">
-              <li>© The Boats all rights reserved</li>
-              <li>Offer contract</li>
-              <li>Privacy Policy</li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </main>
+    </div>
     <script src="./js/navigation.js"></script>
     <script src="./js/validation.js"></script>
     <script defer src="./js/form.js"></script>
