@@ -974,20 +974,20 @@ footer {
   font-feature-settings: "salt" on;
 }
 
-.registration__form {
+.registration-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
 }
-.registration__text {
+.registration-text {
   display: flex;
   width: 431px;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
 }
-.registration__title {
+.registration-title {
   color: var(--Black2, #000);
   /* Body Text/30px Text Example/Medium */
   font-family: var(--main-font);
@@ -996,7 +996,7 @@ footer {
   font-weight: 500;
   line-height: normal;
 }
-.registration__message {
+.registration-message {
   width: 325px;
   margin: 0;
   color: var(--black2);
@@ -1007,7 +1007,7 @@ footer {
   font-weight: 600;
   line-height: normal;
 }
-.registration__login-link {
+.registration-login-link {
   color: #0c21c1;
   cursor: pointer;
 }
