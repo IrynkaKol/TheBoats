@@ -50,7 +50,7 @@ dd {
 }
 
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100%;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -60,13 +60,15 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0;
 }
 
 main {
   display: flex;
   flex-direction: column;
   gap: 160px;
-  margin: o auto;
+  margin: 0 auto;
+  /* min-height: 100vh; */
 }
 
 a:not([class]) {
@@ -107,7 +109,9 @@ path {
   fill: inherit;
   stroke: inherit;
 }
-
+.wrapper {
+  min-width: 100%;
+}
 .container {
   margin: 0 auto;
   max-width: 1920px;
@@ -838,7 +842,8 @@ footer {
   border: 1px solid var(--black1);
   background: var(--black1);
   width: 100%;
-  margin: o auto;
+  margin: 0 auto;
+  /* margin-top: auto; */
 }
 
 .footer__content {
