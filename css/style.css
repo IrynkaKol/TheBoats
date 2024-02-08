@@ -280,7 +280,7 @@ path {
   background-size: cover;
   height: 1064px;
   min-width: 1920px;
-  margin: o auto;
+  margin: 0 auto;
 }
 .hero__container {
   display: flex;
