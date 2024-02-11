@@ -1085,7 +1085,9 @@ footer {
   .contacts__content-list {
     gap: 0 49px;
   }
-
+  .contacts__content-item {
+    max-width: 170px;
+  }
   .contacts__content-email {
     word-wrap: break-word;
   }
