@@ -55,10 +55,12 @@ dl,
 dd {
   margin: 0;
 }
-
+button {
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
 body {
-  /* min-height: 100vh; */
-  /* width: 100%;*/
   scroll-behavior: smooth;
   /*text-rendering: optimizeSpeed;*/
   line-height: 1.5;
@@ -246,6 +248,24 @@ path {
   height: 97px;
   flex-shrink: 0;
 }
+.menu__buttons {
+  display: none;
+  flex-direction: row;
+  gap: 32px;
+}
+.menu__btn {
+  width: 43px;
+  height: 43px;
+  padding: 10px 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu__btn span {
+  background-color: var(--black1);
+  height: 2px;
+  width: 100%;
+}
 .menu__list {
   display: flex;
   justify-content: center;
@@ -322,7 +342,7 @@ path {
   position: relative;
 }
 .hero__inner {
-  max-width: 1163px;
+  width: 1163px;
   min-height: 700px;
   background-image: linear-gradient(
       0deg,
@@ -347,7 +367,8 @@ path {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 0 34px;
+
+  width: 1095px;
 }
 
 .hero__title {
@@ -365,7 +386,7 @@ path {
 }
 .hero__btn {
   display: flex;
-  width: 1095px;
+  /*width: 1095px;*/
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -494,7 +515,7 @@ path {
 }
 .about__content {
   display: flex;
-  width: 1707px;
+  max-width: 1707px;
   height: 980px;
   justify-content: center;
   align-items: flex-start;
@@ -520,7 +541,7 @@ path {
   font-feature-settings: "salt" on;
 }
 .about__content-text {
-  width: 667px;
+  max-width: 667px;
   color: var(--greyWarm);
   /* Body Text, 22 Px Text Example, Regular */
   font-family: var(--main-font);
@@ -531,7 +552,6 @@ path {
 }
 .about__slider {
   display: flex;
-  max-width: 1389px;
   padding: 0;
   flex-direction: column;
   align-items: center;
@@ -599,7 +619,7 @@ path {
 
 .about__content li {
   display: flex;
-  height: 485px;
+  height: auto;
   padding-top: 40px;
   flex-direction: column;
   align-items: flex-start;
@@ -1092,7 +1112,28 @@ footer {
     word-wrap: break-word;
   }
 }
+
+@media (max-width: 1600px) {
+  .container {
+    padding: 0 44px;
+  }
+  .header-social {
+    gap: 10px;
+  }
+  .about__slider-line {
+    /* max-width: 1070px;*/
+  }
+  .about__container {
+    gap: 60px;
+  }
+}
 @media (max-width: 834px) {
+  .menu__list {
+    display: none;
+  }
+  .menu__buttons {
+    display: flex;
+  }
   .hero__container {
     min-height: 462px;
   }
@@ -1121,6 +1162,10 @@ footer {
     font-size: 16px;
     line-height: 17.6px;
     padding: 12px 24px;
+  }
+  .about__slider-line {
+    height: 419px;
+    max-width: 751px;
   }
 }
 
