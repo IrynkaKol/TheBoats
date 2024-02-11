@@ -13,7 +13,6 @@
       href="https://fonts.googleapis.com/css?family=Inter+Tight:500,600,700"
       rel="stylesheet"
     />
-    <script type="module" src="./js/slider.js"></script>
 
     <link rel="stylesheet" href="./css/normilize.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -21,504 +20,532 @@
   <body>
     <!--Header section-->
     <header class="header">
-      <a class="header__logo" href="./index.html">
-        <svg width="255" height="97">
-          <use xlink:href="sprite-icons.svg#logo"></use>
-        </svg>
-      </a>
+      <div class="container header__container">
+        <div class="header__wrap">
+          <a class="header__logo" href="./index.html">
+            <svg width="255" height="97">
+              <use xlink:href="sprite-icons.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="link menu__link" href="#about"
+                  >In-Person Boat Monitoring | IPM</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="link menu__link" href="#suites">Try or buy</a>
+              </li>
+              <li class="menu__item">
+                <a class="link menu__link" href="#contacts">Contacts</a>
+              </li>
+              <li class="menu__item">
+                <a class="link menu__link" href="#">Your gallery</a>
+              </li>
+            </ul>
+          </nav>
 
-      <ul class="header-nav">
-        <li class="header-item">
-          <a class="link header-link" href="#about"
-            >In-Person Boat Monitoring | IPM</a
-          >
-        </li>
-        <li class="header-item">
-          <a class="link header-link" href="#suites">Try or buy</a>
-        </li>
-        <li class="header-item">
-          <a class="link header-link" href="#contacts">Contacts</a>
-        </li>
-        <li class="header-item">
-          <a class="link header-link" href="#">Your gallery</a>
-        </li>
-      </ul>
-
-      <div>
-        <ul class="header-social">
-          <li>
-            <a
-              class="header-social__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="share"
-            >
-              <svg class="icon">
-                <use xlink:href="sprite-icons.svg#share"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              class="header-social__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="instagram"
-            >
-              <svg class="icon">
-                <use xlink:href="sprite-icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              class="header-social__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="youtobe"
-            >
-              <svg class="icon">
-                <use xlink:href="sprite-icons.svg#youtobe"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              class="header-social__link"
-              href="https://www.facebook.com/boatssafety"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="facebook"
-            >
-              <svg class="icon">
-                <use xlink:href="sprite-icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <ul class="header-social">
+            <li>
+              <a
+                class="header-social__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="share"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#share"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-social__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-social__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="youtobe"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#youtobe"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-social__link"
+                href="https://www.facebook.com/boatssafety"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--Main section-->
     <main>
       <!--Hero section-->
       <section class="hero">
-        <div class="hero__container">
-          <div class="hero__content">
-            <h1 class="hero__title">your boat is safe!</h1>
-            <div class="hero__btn">
-              <button
-                class="hero__btn-main main-button"
-                type="submit"
-                onclick="redirectToLogin()"
-              >
-                log in
-              </button>
-              <button class="hero__btn-second second-button" type="button">
-                learn more
-              </button>
+        <div class="container hero__container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h1 class="hero__title">your boat is safe!</h1>
+              <div class="hero__btn">
+                <button
+                  class="hero__btn-main main-button"
+                  type="submit"
+                  onclick="redirectToLogin()"
+                >
+                  log in
+                </button>
+                <button class="hero__btn-second second-button" type="button">
+                  learn more
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!--About section-->
-      <section class="about container" id="about">
-        <div class="about__description">
-          <h2 class="about__title">about us</h2>
-          <p class="about__title-text">
-            In-Person Boat Monitoring | IPM - is a service aimed at providing
-            safety and confidence for boat owners. We serve as vigilant
-            custodians for your boat, whether you're away from the marina or
-            even out of the country. Consider us the trusted eyes you can rely
-            on and the professionals you can call at any time to ensure your
-            boat's security.
-          </p>
-        </div>
-        <div class="about__content">
-          <ul>
-            <li>
-              <div class="frame">
-                <span class="frame__number">01</span>
-              </div>
-              <div class="about__content-wrap">
-                <h2 class="about__content-title">What is IPM:</h2>
-                <p class="about__content-text">
-                  In-Person Boat Monitoring | IPM - is a service aimed at
-                  providing safety and confidence for boat owners. We serve as
-                  vigilant custodians for your boat, whether you're away from
-                  the marina or even out of the country. Consider us the trusted
-                  eyes you can rely on and the professionals you can call at any
-                  time to ensure your boat's security.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="frame">
-                <span class="frame__number">02</span>
-              </div>
-              <div class="about__content-wrap">
-                <h2 class="about__content-title">What we do:</h2>
-                <p class="about__content-text">
-                  Our team of IPM Inspectors makes regular physical visits to
-                  your marina, ensuring your boat is safe and well cared for. We
-                  provide you with comprehensive photo and video reports,
-                  capturing every conceivable angle, from the mast to the deck,
-                  assessing the condition of fenders, offering a general
-                  overview, and providing insights into the surrounding
-                  environment. Importantly, we respect your privacy and do not
-                  interfere with onboard electronic monitoring systems, CCTV, or
-                  the like.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="frame">
-                <span class="frame__number">03</span>
-              </div>
-              <div class="about__content-wrap">
-                <h2 class="about__content-title">How we do it:</h2>
-                <p class="about__content-text">
-                  We operate exclusively under a Power of Attorney and are
-                  strictly limited to monitoring activities. Rest assured, we
-                  never set foot on your boat. Instead, we maintain our watchful
-                  eye from the pontoon or pier. To facilitate our access, we
-                  will coordinate with your marina, ensuring they are aware of
-                  our authorized status, and provide them with the necessary
-                  Power of Attorney documentation. Let us emphasize once more;
-                  we do not board your boat.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="frame">
-                <span class="frame__number">04</span>
-              </div>
-              <div class="about__content-wrap">
-                <h2 class="about__content-title">Where we operate:</h2>
-                <p class="about__content-text">
-                  Our primary focus in Spain is the beautiful Costa del Sol,
-                  encompassing the area from Malaga to Gibraltar. Currently, our
-                  services extend to the following marinas:<br />
-                  · Marina Marbella la Bajadilla<br />
-                  · Marina Marbella<br />
-                  · Puerto Banus<br />
-                  And the exciting news? We have plans to expand to an
-                  additional 15 marinas in the future.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <section class="about" id="about">
+        <div class="container about__container">
+          <div class="about__description">
+            <h2 class="about__title">about us</h2>
+            <p class="about__title-text">
+              In-Person Boat Monitoring | IPM - is a service aimed at providing
+              safety and confidence for boat owners. We serve as vigilant
+              custodians for your boat, whether you're away from the marina or
+              even out of the country. Consider us the trusted eyes you can rely
+              on and the professionals you can call at any time to ensure your
+              boat's security.
+            </p>
+          </div>
+          <div class="about__content">
+            <ul>
+              <li>
+                <div class="frame">
+                  <span class="frame__number">01</span>
+                </div>
+                <div class="about__content-wrap">
+                  <h2 class="about__content-title">What is IPM:</h2>
+                  <p class="about__content-text">
+                    In-Person Boat Monitoring | IPM - is a service aimed at
+                    providing safety and confidence for boat owners. We serve as
+                    vigilant custodians for your boat, whether you're away from
+                    the marina or even out of the country. Consider us the
+                    trusted eyes you can rely on and the professionals you can
+                    call at any time to ensure your boat's security.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="frame">
+                  <span class="frame__number">02</span>
+                </div>
+                <div class="about__content-wrap">
+                  <h2 class="about__content-title">What we do:</h2>
+                  <p class="about__content-text">
+                    Our team of IPM Inspectors makes regular physical visits to
+                    your marina, ensuring your boat is safe and well cared for.
+                    We provide you with comprehensive photo and video reports,
+                    capturing every conceivable angle, from the mast to the
+                    deck, assessing the condition of fenders, offering a general
+                    overview, and providing insights into the surrounding
+                    environment. Importantly, we respect your privacy and do not
+                    interfere with onboard electronic monitoring systems, CCTV,
+                    or the like.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="frame">
+                  <span class="frame__number">03</span>
+                </div>
+                <div class="about__content-wrap">
+                  <h2 class="about__content-title">How we do it:</h2>
+                  <p class="about__content-text">
+                    We operate exclusively under a Power of Attorney and are
+                    strictly limited to monitoring activities. Rest assured, we
+                    never set foot on your boat. Instead, we maintain our
+                    watchful eye from the pontoon or pier. To facilitate our
+                    access, we will coordinate with your marina, ensuring they
+                    are aware of our authorized status, and provide them with
+                    the necessary Power of Attorney documentation. Let us
+                    emphasize once more; we do not board your boat.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="frame">
+                  <span class="frame__number">04</span>
+                </div>
+                <div class="about__content-wrap">
+                  <h2 class="about__content-title">Where we operate:</h2>
+                  <p class="about__content-text">
+                    Our primary focus in Spain is the beautiful Costa del Sol,
+                    encompassing the area from Malaga to Gibraltar. Currently,
+                    our services extend to the following marinas:<br />
+                    · Marina Marbella la Bajadilla<br />
+                    · Marina Marbella<br />
+                    · Puerto Banus<br />
+                    And the exciting news? We have plans to expand to an
+                    additional 15 marinas in the future.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-        <div class="about__slider">
-          <div class="about__slider-line">
-            <img src="./images/sliderm01.jpg" alt="boat" />
-            <img src="./images/sliderm02.jpg" alt="noad" />
-            <img src="./images/sliderm03.jpg" alt="boats" />
-            <img src="./images/sliderm04.jpg" alt="yacht" />
-            <img src="./images/sliderm05.jpg" alt="bow" />
+          <div class="about__slider">
+            <div class="about__slider-line">
+              <img src="./images/sliderm01.jpg" alt="boat" />
+              <img src="./images/sliderm02.jpg" alt="noad" />
+              <img src="./images/sliderm03.jpg" alt="boats" />
+              <img src="./images/sliderm04.jpg" alt="yacht" />
+              <img src="./images/sliderm05.jpg" alt="bow" />
+            </div>
+            <div class="about__slider-btn">
+              <button class="about__slider-left">
+                <svg class="about__slider-icon" width="30" height="30">
+                  <use xlink:href="sprite-icons.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="about__slider-right">
+                <svg class="about__slider-icon">
+                  <use xlink:href="sprite-icons.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="about__slider-btn">
-            <button class="about__slider-left">
-              <svg class="about__slider-icon" width="30" height="30">
-                <use xlink:href="sprite-icons.svg#icon-arrow-left"></use>
-              </svg>
-            </button>
-            <button class="about__slider-right">
-              <svg class="about__slider-icon">
-                <use xlink:href="sprite-icons.svg#icon-arrow-right"></use>
-              </svg>
+          <div>
+            <button
+              class="about__button main-button"
+              type="submit"
+              onclick="redirectToLogin()"
+            >
+              i want to order ipm
             </button>
           </div>
-        </div>
-        <div>
-          <button
-            class="about__button main-button"
-            type="submit"
-            onclick="redirectToLogin()"
-          >
-            i want to order ipm
-          </button>
         </div>
       </section>
 
       <!-- Suites section -->
-      <section class="suites container" id="suites">
-        <div class="suites__wrap">
-          <div class="suites__wrap-title">
-            <h2 class="suites__title">try to buy</h2>
-            <p class="suites__text">Choose what suites the best for you</p>
+      <section class="suites" id="suites">
+        <div class="container">
+          <div class="suites__wrap">
+            <div class="suites__wrap-title">
+              <h2 class="suites__title">try to buy</h2>
+              <p class="suites__text">Choose what suites the best for you</p>
+            </div>
+            <ul class="suites__frame">
+              <li class="suites__card">
+                <ul class="suite__text-info suite__text-info--bulleted">
+                  <li class="suite__text-item">Trial: 2 visits per 7 days</li>
+                  <li class="suite__text-item">1 Boat</li>
+                </ul>
+
+                <div class="suites__tariff">
+                  <h3 class="suites__tariff-header">9 EURO</h3>
+                  <div class="suites__tariff-frame">
+                    <p class="suites__tariff-text">One time payment</p>
+                    <button
+                      class="suites__tariff-btn main-button"
+                      onclick="redirectToLogin()"
+                    >
+                      apply
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="suites__card">
+                <ul class="suite__text-info suite__text-info--bulleted">
+                  <li class="suite__text-item">2 Scheduled visits per month</li>
+                  <li class="suite__text-item">1 Boat</li>
+                </ul>
+                <div class="suites__tariff">
+                  <h3 class="suites__tariff-header">99 EURO</h3>
+                  <div class="suites__tariff-frame">
+                    <p class="suites__tariff-text">Monthly</p>
+                    <button
+                      class="suites__tariff-btn main-button"
+                      onclick="redirectToLogin()"
+                    >
+                      apply
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="suites__card">
+                <ul class="suite__text-info suite__text-info--bulleted">
+                  <li class="suite__text-item">4 Scheduled visits per month</li>
+                  <li class="suite__text-item">1 Boat</li>
+                </ul>
+
+                <div class="suites__tariff">
+                  <h3 class="suites__tariff-header">149 EURO</h3>
+                  <div class="suites__tariff-frame">
+                    <p class="suites__tariff-text">Monthly</p>
+                    <button
+                      class="suites__tariff-btn main-button"
+                      onclick="redirectToLogin()"
+                    >
+                      apply
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="suites__card">
+                <ul class="suite__text-info suite__text-info--bulleted">
+                  <li class="suite__text-item">
+                    1 Emergency visit 24/7 availability
+                  </li>
+                  <li class="suite__text-item">1 Boat</li>
+                </ul>
+                <div class="suites__tariff">
+                  <h3 class="suites__tariff-header">199 EURO</h3>
+                  <div class="suites__tariff-frame">
+                    <p class="suites__tariff-text">One time payment</p>
+                    <button
+                      class="suites__tariff-btn main-button"
+                      onclick="redirectToLogin()"
+                    >
+                      apply
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <ul class="suites__frame">
-            <li class="suites__card">
-              <ul class="suite__text-info suite__text-info--bulleted">
-                <li class="suite__text-item">Trial: 2 visits per 7 days</li>
-                <li class="suite__text-item">1 Boat</li>
-              </ul>
-
-              <div class="suites__tariff">
-                <h3 class="suites__tariff-header">9 EURO</h3>
-                <div class="suites__tariff-frame">
-                  <p class="suites__tariff-text">One time payment</p>
-                  <button
-                    class="suites__tariff-btn main-button"
-                    onclick="redirectToLogin()"
-                  >
-                    apply
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="suites__card">
-              <ul class="suite__text-info suite__text-info--bulleted">
-                <li class="suite__text-item">2 Scheduled visits per month</li>
-                <li class="suite__text-item">1 Boat</li>
-              </ul>
-              <div class="suites__tariff">
-                <h3 class="suites__tariff-header">99 EURO</h3>
-                <div class="suites__tariff-frame">
-                  <p class="suites__tariff-text">Monthly</p>
-                  <button
-                    class="suites__tariff-btn main-button"
-                    onclick="redirectToLogin()"
-                  >
-                    apply
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="suites__card">
-              <ul class="suite__text-info suite__text-info--bulleted">
-                <li class="suite__text-item">4 Scheduled visits per month</li>
-                <li class="suite__text-item">1 Boat</li>
-              </ul>
-
-              <div class="suites__tariff">
-                <h3 class="suites__tariff-header">149 EURO</h3>
-                <div class="suites__tariff-frame">
-                  <p class="suites__tariff-text">Monthly</p>
-                  <button
-                    class="suites__tariff-btn main-button"
-                    onclick="redirectToLogin()"
-                  >
-                    apply
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="suites__card">
-              <ul class="suite__text-info suite__text-info--bulleted">
-                <li class="suite__text-item">
-                  1 Emergency visit 24/7 availability
-                </li>
-                <li class="suite__text-item">1 Boat</li>
-              </ul>
-              <div class="suites__tariff">
-                <h3 class="suites__tariff-header">199 EURO</h3>
-                <div class="suites__tariff-frame">
-                  <p class="suites__tariff-text">One time payment</p>
-                  <button
-                    class="suites__tariff-btn main-button"
-                    onclick="redirectToLogin()"
-                  >
-                    apply
-                  </button>
-                </div>
-              </div>
-            </li>
-          </ul>
         </div>
       </section>
 
       <!-- Contacts section -->
-      <section class="contacts container" id="contacts">
-        <div class="contacts__title-wrap">
-          <h2 class="contacts__title">contacts</h2>
-          <p class="contacts__title-text">
-            Ready to embark on the journey of ensuring your boat's safety and
-            well-being? Contact us!
-          </p>
-        </div>
-        <div>
-          <ul class="contacts__content-list">
-            <li class="contacts__content-item">
-              <div class="contacts__wrap">
-                <h3 class="contacts__content-title">Email</h3>
+      <section class="contacts" id="contacts">
+        <div class="container contacts__container">
+          <div class="contacts__title-wrap">
+            <h2 class="contacts__title">contacts</h2>
+            <p class="contacts__title-text">
+              Ready to embark on the journey of ensuring your boat's safety and
+              well-being? <br /><span>Contact us!</span>
+            </p>
+          </div>
+          <div>
+            <ul class="contacts__content-list">
+              <li class="contacts__content-item">
+                <div class="contacts__wrap">
+                  <h3 class="contacts__content-title">Email</h3>
 
-                <p class="contacts__content-text">Theboats.eu@gmail.com</p>
-              </div>
-            </li>
-            <li class="contacts__content-item">
-              <div class="contacts__wrap">
-                <h3 class="contacts__content-title">Phone</h3>
-                <p class="contacts__content-text">
-                  +34674197870 <br />
-                  Calls, sms, whatsapp
-                </p>
-              </div>
-            </li>
-            <li class="contacts__content-item">
-              <div class="contacts__wrap">
-                <h3 class="contacts__content-title contact__adress">Address</h3>
-                <p class="contacts__content-text">
-                  SPAIN <br />Marina Marbella La <br />
-                  Bajadilla Marbella,
-                </p>
-              </div>
-            </li>
-            <li class="contacts__content-item">
-              <div class="contacts__wrap">
-                <h3 class="contacts__content-title contact__adress">Address</h3>
-                <p class="contacts__content-text">
-                  CZECH REPUBLIC <br />
-                  Chodska street, <br />
-                  Brno
-                </p>
-              </div>
-            </li>
-          </ul>
+                  <p class="contacts__content-text contacts__content-email">
+                    Theboats.eu@gmail.com
+                  </p>
+                </div>
+              </li>
+              <li class="contacts__content-item">
+                <div class="contacts__wrap">
+                  <h3 class="contacts__content-title">Phone</h3>
+                  <p class="contacts__content-text">
+                    +34674197870 <br />
+                    Calls, sms, whatsapp
+                  </p>
+                </div>
+              </li>
+              <li class="contacts__content-item">
+                <div class="contacts__wrap">
+                  <h3 class="contacts__content-title contact__adress">
+                    Address
+                  </h3>
+                  <p class="contacts__content-text">
+                    SPAIN <br />Marina Marbella La <br />
+                    Bajadilla Marbella,
+                  </p>
+                </div>
+              </li>
+              <li class="contacts__content-item">
+                <div class="contacts__wrap">
+                  <h3 class="contacts__content-title contact__adress">
+                    Address
+                  </h3>
+                  <p class="contacts__content-text">
+                    CZECH REPUBLIC <br />
+                    Chodska street, <br />
+                    Brno
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- Subscrube section -->
-      <section class="subscribe container">
-        <div class="subscribe__wrap">
-          <div class="subscribe__frame">
-            <div class="subscribe__title">
-              <div class="subscribe__info">Contact us at</div>
-              <div class="subscribe__email">Theboats.eu@gmail.com</div>
+      <section class="subscribe">
+        <div class="container subscribe__container">
+          <div class="subscribe__inner">
+            <div class="subscribe__title-wrap">
+              <h2 class="subscribe__title">sign up for:</h2>
             </div>
-            <div class="subscribe__social">
-              <p class="subscribe__message">Please, subscribe:</p>
-              <ul class="subscribe__social-wrap">
-                <li>
-                  <a
-                    class="subscribe-social__link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="share"
-                  >
-                    <svg class="icon">
-                      <use xlink:href="sprite-icons.svg#share"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="subscribe-social__link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="instagram"
-                  >
-                    <svg class="icon">
-                      <use xlink:href="sprite-icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="subscribe-social__link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="youtobe"
-                  >
-                    <svg class="icon">
-                      <use xlink:href="sprite-icons.svg#youtobe"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="subscribe-social__link"
-                    href="https://www.facebook.com/boatssafety"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="facebook"
-                  >
-                    <svg class="icon">
-                      <use xlink:href="sprite-icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+
+            <div class="subscribe__wrap">
+              <div class="subscribe__frame">
+                <div class="subscribe__content">
+                  <div class="subscribe__info">Contact us at</div>
+                  <div class="subscribe__email">Theboats.eu@gmail.com</div>
+                </div>
+                <div class="subscribe__social">
+                  <p class="subscribe__message">Please, subscribe:</p>
+                  <ul class="subscribe__social-wrap">
+                    <li>
+                      <a
+                        class="subscribe-social__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="share"
+                      >
+                        <svg class="icon">
+                          <use xlink:href="sprite-icons.svg#share"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="subscribe-social__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="instagram"
+                      >
+                        <svg class="icon">
+                          <use xlink:href="sprite-icons.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="subscribe-social__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="youtobe"
+                      >
+                        <svg class="icon">
+                          <use xlink:href="sprite-icons.svg#youtobe"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="subscribe-social__link"
+                        href="https://www.facebook.com/boatssafety"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="facebook"
+                      >
+                        <svg class="icon">
+                          <use xlink:href="sprite-icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+    </main>
 
-      <!--Footer sectoin-->
-      <footer class="footer">
-        <div class="footer__content">
-          <a class="footer__logo" href="./index.html">
-            <svg width="128" height="49">
-              <use xlink:href="sprite-icons.svg#logo-footer"></use>
-            </svg>
-          </a>
+    <!--Footer sectoin-->
 
-          <div class="footer__subscribe">
-            <ul class="footer__list">
-              <li>
-                <a
-                  class="footer__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="instagram"
-                >
-                  <svg class="footer__icon">
-                    <use xlink:href="sprite-icons.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="footer__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="youtobe"
-                >
-                  <svg class="footer__icon">
-                    <use xlink:href="sprite-icons.svg#youtobe"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="https://www.facebook.com/boatssafety"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="facebook"
-                >
-                  <svg class="footer__icon">
-                    <use xlink:href="sprite-icons.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+    <footer class="footer">
+      <div class="footer__content">
+        <a class="footer__logo" href="./index.html">
+          <svg width="128" height="49">
+            <use xlink:href="sprite-icons.svg#logo-footer"></use>
+          </svg>
+        </a>
 
-            <div class="footer__message">
-              Subscribe to us <br />
-              in social networks
-            </div>
-          </div>
+        <div class="footer__subscribe">
+          <ul class="footer__list">
+            <li>
+              <a
+                class="footer__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="footer__icon">
+                  <use xlink:href="sprite-icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="youtobe"
+              >
+                <svg class="footer__icon">
+                  <use xlink:href="sprite-icons.svg#youtobe"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                href="https://www.facebook.com/boatssafety"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <svg class="footer__icon">
+                  <use xlink:href="sprite-icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
 
-          <div class="footer__rights">
-            <ul class="footer__rights-list">
-              <li>© The Boats all rights reserved</li>
-              <li>Offer contract</li>
-              <li>Privacy Policy</li>
-            </ul>
+          <div class="footer__message">
+            Subscribe to us <br />
+            in social networks
           </div>
         </div>
-      </footer>
-    </main>
-    <script src="./js/navigation.js"></script>
+
+        <div class="footer__rights">
+          <ul class="footer__rights-list">
+            <li>© The Boats all rights reserved</li>
+            <li>Offer contract</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/navigation.js"></script>
+    <script type="module" src="./js/slider.js"></script>
   </body>
 </html>
