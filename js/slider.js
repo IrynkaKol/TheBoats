@@ -4,7 +4,7 @@ let count = 0;
 let width;
 
 function init() {
-//console.log('resize')
+console.log('resize')
 
 width = document.querySelector('.about__slider').offsetWidth;
 
@@ -15,7 +15,7 @@ images.forEach(item =>{
 })
 sliderLine.style.width = width * images.length + 'px';
 rollSlider()
- //console.log(width)
+ console.log(width)
 }
 
 
@@ -24,7 +24,7 @@ rollSlider()
 
  document.querySelector('.about__slider-right').addEventListener('click', function(){
     
-    count ++;
+    count += 1;
     if (count >= images.length) {
         count = 0
     }
@@ -35,7 +35,7 @@ rollSlider()
 
  document.querySelector('.about__slider-left').addEventListener('click', function(){
     
-    count --;
+    count -= 1;
     if (count < 0) {
         count = images.length - 1
     }
