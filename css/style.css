@@ -408,6 +408,7 @@ path {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 40px;
 }
 .about__description {
   display: flex;
@@ -447,14 +448,19 @@ path {
   align-items: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 .about__list {
   display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   /*grid-template-columns: repeat(2, 1fr);*/
-  gap: 60px;
+  gap: 40px;
+  margin-bottom: 30px;
 }
-.about__content li {
+.about__card {
+  flex-basis: calc(100% / 2 - 40px);
+  min-width: 343px;
   display: flex;
   height: auto;
   padding-top: 40px;
@@ -464,6 +470,10 @@ path {
   border-top: 1px solid var(--greyGold, rgba(21, 21, 21, 0.4));
   border-top: 1px solid var(--greyGold, rgba(21, 21, 21, 0.4));
 }
+.about__card:not(:nth-child(-n + 1)) {
+  display: none;
+}
+
 .frame {
   display: flex;
   align-items: flex-start;
@@ -508,6 +518,16 @@ path {
   text-align: left;
 }
 
+.about__btn {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--greyWarm);
+  text-decoration: underline;
+}
 .about__slider {
   position: relative;
   max-width: 100%;
@@ -649,9 +669,9 @@ path {
 .suites__frame {
   display: grid;
   /*grid-template-columns: repeat(2, 1fr);*/
-
+  /*
   align-items: flex-start;
-  align-content: flex-start;
+  align-content: flex-start;*/
   gap: 8px;
 }
 .suites__card {
