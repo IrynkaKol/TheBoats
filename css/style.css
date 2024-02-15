@@ -68,7 +68,9 @@ body {
   background-color: var(--beige);
   margin: 0;
 }
-
+.hidden {
+  display: none;
+}
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
@@ -365,9 +367,6 @@ path {
 }
 .hero__btn-main {
   display: none;
-  /*
-  width: 287px;
-  height: 72px;*/
 }
 .hero__btn-second {
   font-family: var(--main-font);
@@ -419,7 +418,6 @@ path {
 }
 .about__title {
   font-family: var(--secondary-font);
-
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -452,28 +450,27 @@ path {
   margin-bottom: 40px;
 }
 .about__list {
-  display: grid;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /*grid-template-columns: repeat(2, 1fr);*/
   gap: 40px;
   margin-bottom: 30px;
 }
 .about__card {
   flex-basis: calc(100% / 2 - 40px);
   min-width: 343px;
-  display: flex;
+  display: none;
+
   height: auto;
   padding-top: 40px;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  border-top: 1px solid var(--greyGold, rgba(21, 21, 21, 0.4));
+
   border-top: 1px solid var(--greyGold, rgba(21, 21, 21, 0.4));
 }
-.about__card:not(:nth-child(-n + 1)) {
-  display: none;
+.about__card:first-child {
+  display: flex;
 }
 
 .frame {
@@ -685,7 +682,6 @@ path {
   min-width: 343px;
   display: flex;
   gap: 37px;
-  /*position: relative;*/
   height: 100%;
   width: 100%;
   padding: 20px;
@@ -1060,6 +1056,9 @@ footer {
 }
 
 @media screen and (min-width: 834px) {
+  .container {
+    padding: 0 40px;
+  }
   .header__container {
     padding-left: 44px;
     padding-right: 44px;
@@ -1110,6 +1109,28 @@ footer {
   .hero__btn-second {
     padding: 14px, 26px, 14px, 26px;
     text-align: left;
+  }
+
+  .about {
+    margin-bottom: 160px;
+  }
+  .about__title {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+  .about__content {
+    margin-bottom: 60px;
+  }
+  .about__list {
+    gap: 60px;
+    margin-bottom: 40px;
+  }
+  .about__card {
+    min-width: 749px;
+    padding-right: 72px;
+  }
+  .about__card:nth-child(-n + 2) {
+    display: flex;
   }
 }
 /*
