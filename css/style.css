@@ -531,10 +531,7 @@ path {
 .about__slider {
   position: relative;
   max-width: 100%;
-  border-radius: 25px;
-  border: 1px solid var(--black1);
   overflow: hidden;
-  padding: 0 1px;
   margin-bottom: 30px;
 }
 .about__slider-line {
@@ -545,6 +542,10 @@ path {
   border-radius: 20px;
   transition: all ease 1s;
   min-height: 356px;
+}
+.about__slider-img {
+  border: 1px solid var(--black1);
+  border-radius: 20px;
 }
 
 .about__slider-btn {
@@ -667,7 +668,6 @@ path {
   color: var(--black2);
 }
 .suites__frame {
-  display: grid;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -677,12 +677,14 @@ path {
   align-content: flex-start;*/
   gap: 8px;
 }
+.suites__tariff-header-tablet {
+  display: none;
+}
 .suites__card {
   flex-basis: calc(100% / 2 - 8px);
   min-width: 343px;
   display: flex;
   gap: 37px;
-  height: 100%;
   width: 100%;
   padding: 20px;
   flex-direction: column;
@@ -692,8 +694,14 @@ path {
   border: 1px solid var(--black1);
   position: relative;
 }
+.suites__header-tablet {
+  display: none;
+}
 .suites__header {
+  display: flex;
+  flex-direction: column;
   padding: 0 62px;
+  gap: 37px;
 }
 .suites__tariff-header {
   color: var(--black2);
@@ -707,6 +715,7 @@ path {
 .suite__text-info {
   display: flex;
   flex-direction: column;
+
   align-items: center;
   gap: 12px;
 }
@@ -727,10 +736,6 @@ path {
   gap: 12px;
 }
 .suites__tariff-text {
-  /*position: absolute;*/
-  /*left: 50%;
-  transform: translateX(-50%);
-  bottom: 318px;*/
   font-family: var(--secondary-font);
   font-size: 24px;
   font-weight: 700;
@@ -749,12 +754,6 @@ path {
   letter-spacing: -0.02em;
   text-align: left;
   padding: 14px 60px;
-
-  /*
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);*/
 }
 
 .suite__text-info--bulleted {
@@ -773,7 +772,6 @@ path {
 /* Contacts section */
 .contacts {
   margin-bottom: 100px;
-  /*justify-content: center;*/
 }
 
 .contacts__container {
@@ -1080,7 +1078,7 @@ footer {
     padding: 14px 26px;
   }
   .hero {
-    margin-bottom: 160px;
+    margin-bottom: 120px;
   }
 
   .hero__container {
@@ -1112,7 +1110,7 @@ footer {
   }
 
   .about {
-    margin-bottom: 160px;
+    margin-bottom: 120px;
   }
   .about__title {
     font-size: 18px;
@@ -1131,6 +1129,82 @@ footer {
   }
   .about__card:nth-child(-n + 2) {
     display: flex;
+  }
+  .about__slider-line {
+    margin-bottom: 24px;
+    /* border: 1px solid var(--black1);*/
+  }
+  .about__slider-btn {
+    position: static;
+    transform: none;
+    gap: 10px;
+    padding: 0px;
+  }
+
+  .about__slider-left,
+  .about__slider-right {
+    background: none;
+    background-color: transparent;
+  }
+  .suites {
+    margin-bottom: 120px;
+  }
+  .suites__wrap-title {
+    gap: 40px;
+  }
+  .suites__wrap {
+    gap: 40px;
+  }
+  .suites__title {
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: 0.16em;
+  }
+}
+@media (min-width: 893px) and (max-width: 1919px) {
+  .suites__frame {
+    border-radius: 20px;
+    border: 1px solid var(--black1);
+    padding: 40px;
+    gap: 0;
+  }
+  .suites__card {
+    flex-basis: 100%;
+    flex-direction: row;
+    padding: 0;
+    margin-bottom: 60px;
+    border: none;
+    gap: 8px;
+  }
+  .suites__header-tablet {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .suites__tariff-header {
+    text-align: left;
+    color: var(--greyWarm);
+  }
+
+  .suites__card:last-child {
+    margin-bottom: 0;
+  }
+
+  .suites__tariff-header {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+  .suites__header {
+    display: none;
+  }
+  .suites__tariff-text {
+    display: none;
+  }
+
+  .suites__tariff-btn {
+    padding: 12px 24px;
   }
 }
 /*
