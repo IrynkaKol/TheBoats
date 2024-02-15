@@ -458,7 +458,7 @@ path {
 }
 .about__card {
   flex-basis: calc(100% / 2 - 40px);
-  min-width: 343px;
+  /*min-width: 343px;*/
   display: none;
 
   height: auto;
@@ -681,7 +681,8 @@ path {
   display: none;
 }
 .suites__card {
-  flex-basis: calc(100% / 2 - 8px);
+  flex-basis: 100%;
+  /*flex-basis: calc(100% / 2 - 8px);*/
   min-width: 343px;
   display: flex;
   gap: 37px;
@@ -884,6 +885,7 @@ path {
 .subscribe__wrap {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   gap: 47px;
   padding: 40px;
   border-radius: 20px;
@@ -1111,7 +1113,7 @@ footer {
     margin-bottom: 40px;
   }
   .about__card {
-    min-width: 749px;
+    /*min-width: 749px;*/
     padding-right: 72px;
   }
   .about__card:nth-child(-n + 2) {
@@ -1146,6 +1148,46 @@ footer {
     font-size: 18px;
     line-height: 1.1;
     letter-spacing: 0.16em;
+  }
+  .contacts {
+    margin-bottom: 120px;
+  }
+  .contacts__title-wrap {
+    padding: 0 36px;
+  }
+  .contacts__title-text {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
+  .contacts__content-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+    gap: 49px;
+    min-height: 97px;
+  }
+
+  .contacts__wrap {
+    height: 100%;
+    justify-content: space-between;
+  }
+  .contacts__wrap-email {
+    padding: 0;
+  }
+  .contacts__content-title {
+    text-align: left;
+  }
+  .contacts__content-text {
+    text-align: left;
+  }
+  .subscribe__title {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+  .subscribe__wrap {
+    min-width: 463px;
   }
 }
 @media (min-width: 893px) and (max-width: 1919px) {
@@ -1192,38 +1234,6 @@ footer {
 
   .suites__tariff-btn {
     padding: 12px 24px;
-  }
-  .contacts {
-    margin-bottom: 120px;
-  }
-  .contacts__title-wrap {
-    padding: 0 36px;
-  }
-  .contacts__title-text {
-    font-size: 24px;
-    line-height: 1.5;
-    letter-spacing: 0em;
-  }
-  .contacts__content-list {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 0;
-    gap: 49px;
-    min-height: 97px;
-  }
-  .contacts__content-item {
-  }
-  .contacts__wrap {
-  }
-  .contacts__wrap-email {
-    padding: 0;
-  }
-  .contacts__content-title {
-    text-align: left;
-  }
-  .contacts__content-text {
-    text-align: left;
   }
 }
 /*
