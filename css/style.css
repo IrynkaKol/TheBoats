@@ -457,7 +457,7 @@ path {
   margin-bottom: 30px;
 }
 .about__card {
-  flex-basis: calc(100% / 2 - 40px);
+  /*flex-basis: calc(100% / 2 - 40px);*/
   /*min-width: 343px;*/
   display: none;
 
@@ -1111,14 +1111,14 @@ footer {
   }
   .about__list {
     gap: 60px;
-    margin-bottom: 40px;
+    flex-direction: column;
   }
-  .about__card {
-    min-width: 749px;
-    padding-right: 72px;
-  }
+
   .about__card:nth-child(-n + 2) {
     display: flex;
+  }
+  .about__content-wrap {
+    padding-right: 137px;
   }
   .about__slider-line {
     margin-bottom: 24px;
