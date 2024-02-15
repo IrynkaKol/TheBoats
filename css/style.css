@@ -193,7 +193,7 @@ path {
 }
 .header__container {
   margin: 0 auto;
-  padding: 27px 15px;
+  padding: 27px 27px 27px 15px;
 }
 .header__wrap {
   display: flex;
@@ -229,7 +229,7 @@ path {
 }
 .menu__btn {
   width: 43px;
-  height: 43px;
+  height: 46px;
   padding: 10px 6px;
   display: flex;
   flex-direction: column;
@@ -1041,8 +1041,7 @@ footer {
     padding: 0 40px;
   }
   .header__container {
-    padding-left: 44px;
-    padding-right: 44px;
+    padding: 21px 44px;
   }
 
   .menu__buttons {
@@ -1107,7 +1106,7 @@ footer {
     margin-bottom: 40px;
   }
   .about__card {
-    /*min-width: 749px;*/
+    min-width: 749px;
     padding-right: 72px;
   }
   .about__card:nth-child(-n + 2) {
@@ -1169,6 +1168,7 @@ footer {
   }
   .contacts__wrap-email {
     padding: 0;
+    max-width: 120px;
   }
   .contacts__content-title {
     text-align: left;
