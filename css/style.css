@@ -213,7 +213,7 @@ path {
 }*/
 
 .header__logo {
-  max-width: 127px;
+  width: 127px;
   height: 48px;
 
   /*
@@ -1042,6 +1042,14 @@ footer {
   }
   .header__container {
     padding: 21px 44px;
+  }
+
+  .header__logo {
+    height: 64px;
+  }
+  .header__logo svg {
+    height: 100%;
+    width: 170px;
   }
 
   .menu__buttons {
