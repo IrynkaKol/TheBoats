@@ -124,7 +124,7 @@ path {
 .main-button {
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.1;
+  /*line-height: 1.1;*/
   letter-spacing: -0.02em;
   text-transform: uppercase;
 
@@ -228,7 +228,7 @@ path {
 
 .menu__btn {
   width: 43px;
-  height: 46px;
+  height: 43px;
   padding: 10px 6px;
   display: flex;
   flex-direction: column;
@@ -867,6 +867,7 @@ footer {
 
   .menu__buttons {
     display: flex;
+    /*align-items: center;*/
     gap: 32px;
   }
   .menu__reserve.hidden {
@@ -912,7 +913,7 @@ footer {
     display: flex;
   }
   .about__content-wrap {
-    padding-right: 137px;
+    padding-right: 40px;
   }
   .about__slider-line {
     margin-bottom: 24px;
@@ -1051,6 +1052,14 @@ footer {
 }
 
 @media screen and (min-width: 1920px) {
+  .main-button,
+  .second-button {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 100px;
+  }
+
   .header__container {
     padding-left: 102px;
     padding-right: 102px;
@@ -1095,14 +1104,10 @@ footer {
   }
   .hero__btn-main {
     display: flex;
-
-    font-family: var(--main-font);
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    text-align: left;
-    padding: 14px 26px;
+    padding: 24px 108px;
+  }
+  .hero__btn-second {
+    padding: 24px 77px;
   }
   .hero__wrap {
     gap: 30px;
@@ -1178,8 +1183,7 @@ footer {
     height: 37px;
   }
   .about__button {
-    font-size: 22px;
-    font-weight: 600;
+    padding: 24px 48px;
   }
   .suites {
     margin-bottom: 160px;
@@ -1206,7 +1210,7 @@ footer {
   .suites__card {
     flex-basis: calc(100% / 2 - 30px);
     max-width: 645px;
-    padding: 140px 98px;
+    padding: 140px;
     gap: 0;
   }
 
@@ -1228,6 +1232,7 @@ footer {
 
   .suites__tariff-btn-desctop.hidden {
     display: flex;
+    padding: 24px 87px;
   }
   .suite__text-info {
     display: none;
