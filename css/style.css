@@ -489,7 +489,7 @@ path {
   background-size: cover;*/
   border-radius: 20px;
   transition: all ease 1s;
-  min-height: 356px;
+  max-height: 356px;
 }
 .about__slider-img {
   border: 1px solid var(--black1);
@@ -1071,6 +1071,7 @@ footer {
   }
   .about__slider-line {
     margin-bottom: 24px;
+    max-height: 419px;
   }
   .about__slider-btn {
     position: static;
@@ -1192,10 +1193,19 @@ footer {
     line-height: 1.1;
     letter-spacing: 0.02em;
   }
+  .suite__text-info-desktop {
+    display: none;
+  }
   .suites__header {
     display: none;
   }
   .suites__tariff-text {
+    display: none;
+  }
+  .suites__tariff-text-desctop {
+    display: none;
+  }
+  .suites__tariff-btn-desctop {
     display: none;
   }
 
@@ -1322,6 +1332,10 @@ footer {
   .about__slider {
     margin-bottom: 100px;
   }
+  .about__slider-line {
+    margin-bottom: 40px;
+    max-height: 778px;
+  }
   .about__slider-btn {
     gap: 20px;
   }
@@ -1333,6 +1347,84 @@ footer {
   .about__slider-icon {
     width: 37px;
     height: 37px;
+  }
+  .about__button {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .suites__wrap-title {
+    gap: 60px;
+  }
+  .suites__title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .suites__text {
+    font-size: 38px;
+    letter-spacing: -0.02em;
+  }
+  .suites__wrap {
+    gap: 100px;
+  }
+  .suites__frame {
+    padding: 0 240px;
+    gap: 60px;
+    justify-content: space-between;
+  }
+  .suites__card {
+    flex-basis: calc(100% / 2 - 30px);
+    max-width: 645px;
+    padding: 140px 98px;
+    gap: 0;
+  }
+
+  .suites__tariff {
+    display: none;
+  }
+  .suites__tariff-text-desctop {
+    display: flex;
+    margin-bottom: 23px;
+  }
+
+  .suites__header {
+    max-width: 222px;
+    margin-bottom: 24px;
+    flex-direction: column;
+    text-align: end;
+    padding: 0;
+  }
+  .suites__tariff-header {
+    min-height: 62px;
+  }
+  .suites__tariff-btn-desctop {
+    display: flex;
+  }
+  .suite__text-info {
+    display: none;
+  }
+  .suite__text-info-desktop {
+    display: flex;
+    gap: 38px;
+    margin-bottom: 112px;
+  }
+  .suites__text-item {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  .suites__tariff-text {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+  .suites__tariff-header {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0em;
   }
 }
 /*
