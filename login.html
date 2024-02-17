@@ -17,356 +17,354 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="login-wrapper">
-      <!--Header section-->
-      <header class="header">
-        <div class="container header__container">
-          <div class="header__wrap">
-            <a class="header__logo" href="./index.html">
-              <svg width="255" height="97">
-                <use xlink:href="sprite-icons.svg#logo"></use>
-              </svg>
-            </a>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="link menu__link" href="#about"
-                    >In-Person Boat Monitoring | IPM</a
-                  >
-                </li>
-                <li class="menu__item">
-                  <a class="link menu__link" href="#suites">Try or buy</a>
-                </li>
-                <li class="menu__item">
-                  <a class="link menu__link" href="#contacts">Contacts</a>
-                </li>
-                <li class="menu__item">
-                  <a class="link menu__link" href="#">Your gallery</a>
-                </li>
-              </ul>
-            </nav>
-
-            <ul class="header-social">
-              <li>
-                <a
-                  class="header-social__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="share"
+    <!--Header section-->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__wrap">
+          <a class="header__logo" href="./index.html">
+            <svg width="127px" height="48px">
+              <use xlink:href="sprite-icons.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="menu">
+            <div class="menu__buttons">
+              <button class="menu__reserve hidden main-button">reserve</button>
+              <button class="menu__btn" type="menu">
+                <span></span><span></span><span></span>
+              </button>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="link menu__link" href="#about"
+                  >In-Person Boat Monitoring | IPM</a
                 >
-                  <svg class="icon">
-                    <use xlink:href="sprite-icons.svg#share"></use>
-                  </svg>
-                </a>
               </li>
+              <li class="menu__item">
+                <a class="link menu__link" href="#suites">Try or buy</a>
+              </li>
+              <li class="menu__item">
+                <a class="link menu__link" href="#contacts">Contacts</a>
+              </li>
+              <li class="menu__item">
+                <a class="link menu__link" href="#">Your gallery</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-social hidden">
+            <li>
+              <a
+                class="header-social__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="share"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#share"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-social__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-social__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="youtobe"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#youtobe"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-social__link"
+                href="https://www.facebook.com/boatssafety"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <svg class="icon">
+                  <use xlink:href="sprite-icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Login form -->
+
+    <div class="login-container">
+      <div class="login-content">
+        <div class="login__page-path">
+          <a class="login__page-path-home" href="index.html">Home /</a>
+          <a class="login__page-path-login activ" href="#">Sign in</a>
+        </div>
+        <form
+          action="#"
+          method="post"
+          name="secondary"
+          id="add-loginform"
+          class="login__form"
+          novalidate
+        >
+          <div class="form__row">
+            <div class="login__text">
+              <strong class="login__title">Sign in</strong>
+              <p class="login__message">
+                If you don’t have an account register You can
+                <a class="login__login-link" href="registration.html"
+                  >Register here !</a
+                >
+              </p>
+            </div>
+            <div class="form__row-frame">
+              <div class="form__row-label">
+                <div class="form__row-gap">
+                  <div class="form-frame">
+                    <label class="form-label" for="inputEmail">Email</label>
+                    <div class="form-wrap">
+                      <div class="form-input">
+                        <svg class="form__icon" width="17" height="11">
+                          <use href="./sprite-icons.svg#icon-envelope"></use>
+                        </svg>
+                        <input
+                          type="email"
+                          name="inputEmail"
+                          class="form-control"
+                          id="inputEmail"
+                          placeholder="Enter your email address"
+                          data-placeholder="Enter your email address"
+                          autocomplete="off"
+                          autofocus
+                        />
+                        <span
+                          class="icon-warning"
+                          style="display: none"
+                          id="warning-email1"
+                        >
+                          <svg width="16" height="16">
+                            <use
+                              xlink:href="./sprite-icons.svg#icon-warning"
+                            ></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="error-message" id="email1-error"></div>
+                    </div>
+                  </div>
+                  <div class="form__frame-down">
+                    <div class="form-frame">
+                      <div class="form-input-width">
+                        <label class="form-label" for="inputPassword"
+                          >Password</label
+                        >
+                        <div>
+                          <div class="form-wrap">
+                            <div class="form-input">
+                              <div class="form-input-invisible">
+                                <div class="form-input-padlock">
+                                  <svg
+                                    class="form__icon"
+                                    width="17"
+                                    height="11"
+                                  >
+                                    <use
+                                      href="./sprite-icons.svg#icon-padlock"
+                                    ></use>
+                                  </svg>
+                                  <input
+                                    type="password"
+                                    name="inputPassword"
+                                    class="form-control"
+                                    id="inputPassword"
+                                    placeholder="Enter your Password"
+                                    data-placeholder="Enter your Password"
+                                    autocomplete="off"
+                                  />
+                                </div>
+                                <span
+                                  class="hide hideable-icon"
+                                  id="icon-pass"
+                                  onclick="return togglePasswordVisibility(this)"
+                                ></span>
+                                <span
+                                  class="icon-warning"
+                                  style="display: none"
+                                  id="warning-passwordl"
+                                >
+                                  <svg width="16" height="16">
+                                    <use
+                                      xlink:href="./sprite-icons.svg#icon-warning"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              class="error-message"
+                              id="passwordl-error"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__remember">
+                      <div class="form__checkbox">
+                        <input
+                          type="checkbox"
+                          id="checkbox"
+                          class="form__checkbox-styled"
+                        />
+                        <p class="form__checkbox-content">Remember me</p>
+                      </div>
+                      <a class="form__remember-link">Forgot Password ?</a>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="login__button main-button">
+                  Log in
+                </button>
+              </div>
+              <div class="login-social">
+                <p class="login-social-message">or continue with</p>
+                <div class="login-social-wrap">
+                  <ul class="login-social-list">
+                    <li>
+                      <a
+                        class="login-social__link"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="facebook"
+                      >
+                        <svg class="login__icon facebook">
+                          <use
+                            xlink:href="sprite-icons.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="login-social__link"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="apple"
+                      >
+                        <svg class="login__icon login-apple">
+                          <use xlink:href="sprite-icons.svg#icon-apple"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="login-social__link"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="google"
+                      >
+                        <svg class="login__icon login-google">
+                          <use xlink:href="sprite-icons.svg#icon-google"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Footer sectoin-->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <a class="footer__logo" href="./index.html">
+            <svg width="127px" height="48px">
+              <use xlink:href="sprite-icons.svg#logo-footer"></use>
+            </svg>
+          </a>
+
+          <div class="footer__subscribe">
+            <ul class="footer__list">
               <li>
                 <a
-                  class="header-social__link"
-                  href=""
+                  class="footer__link"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="instagram"
                 >
-                  <svg class="icon">
+                  <svg class="footer__icon">
                     <use xlink:href="sprite-icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a
-                  class="header-social__link"
-                  href=""
+                  class="footer__link"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="youtobe"
                 >
-                  <svg class="icon">
+                  <svg class="footer__icon">
                     <use xlink:href="sprite-icons.svg#youtobe"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a
-                  class="header-social__link"
+                  class="footer__link"
                   href="https://www.facebook.com/boatssafety"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="facebook"
                 >
-                  <svg class="icon">
+                  <svg class="footer__icon">
                     <use xlink:href="sprite-icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-      </header>
 
-      <!-- Login form -->
-      <div class="login-frame">
-        <div class="login-container">
-          <div class="login-content">
-            <div class="login__page-path">
-              <a class="login__page-path-home" href="index.html">Home /</a>
-              <a class="login__page-path-login activ" href="#">Sign in</a>
+            <div class="footer__message">
+              Subscribe to us <br />
+              in social networks
             </div>
-            <form
-              action="#"
-              method="post"
-              name="secondary"
-              id="add-loginform"
-              class="login__form"
-              novalidate
-            >
-              <div class="form__row">
-                <div class="login__text">
-                  <strong class="login__title">Sign in</strong>
-                  <p class="login__message">
-                    If you don’t have an account register You can
-                    <a class="login__login-link" href="registration.html"
-                      >Register here !</a
-                    >
-                  </p>
-                </div>
-                <div class="form__row-frame">
-                  <div class="form__row-label">
-                    <div class="form__row-gap">
-                      <div class="form-frame">
-                        <label class="form-label" for="inputEmail">Email</label>
-                        <div class="form-wrap">
-                          <div class="form-input">
-                            <svg class="form__icon" width="17" height="11">
-                              <use
-                                href="./sprite-icons.svg#icon-envelope"
-                              ></use>
-                            </svg>
-                            <input
-                              type="email"
-                              name="inputEmail"
-                              class="form-control"
-                              id="inputEmail"
-                              placeholder="Enter your email address"
-                              data-placeholder="Enter your email address"
-                              autocomplete="off"
-                              autofocus
-                            />
-                            <span
-                              class="icon-warning"
-                              style="display: none"
-                              id="warning-email1"
-                            >
-                              <svg width="16" height="16">
-                                <use
-                                  xlink:href="./sprite-icons.svg#icon-warning"
-                                ></use>
-                              </svg>
-                            </span>
-                          </div>
-                          <div class="error-message" id="email1-error"></div>
-                        </div>
-                      </div>
-                      <div class="form__frame-down">
-                        <div class="form-frame">
-                          <div class="form-input-width">
-                            <label class="form-label" for="inputPassword"
-                              >Password</label
-                            >
-                            <div>
-                              <div class="form-wrap">
-                                <div class="form-input">
-                                  <div class="form-input-invisible">
-                                    <div class="form-input-padlock">
-                                      <svg
-                                        class="form__icon"
-                                        width="17"
-                                        height="11"
-                                      >
-                                        <use
-                                          href="./sprite-icons.svg#icon-padlock"
-                                        ></use>
-                                      </svg>
-                                      <input
-                                        type="password"
-                                        name="inputPassword"
-                                        class="form-control"
-                                        id="inputPassword"
-                                        placeholder="Enter your Password"
-                                        data-placeholder="Enter your Password"
-                                        autocomplete="off"
-                                      />
-                                    </div>
-                                    <span
-                                      class="hide hideable-icon"
-                                      id="icon-pass"
-                                      onclick="return togglePasswordVisibility(this)"
-                                    ></span>
-                                    <span
-                                      class="icon-warning"
-                                      style="display: none"
-                                      id="warning-passwordl"
-                                    >
-                                      <svg width="16" height="16">
-                                        <use
-                                          xlink:href="./sprite-icons.svg#icon-warning"
-                                        ></use>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                </div>
-                                <div
-                                  class="error-message"
-                                  id="passwordl-error"
-                                ></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form__remember">
-                          <div class="form__checkbox">
-                            <input
-                              type="checkbox"
-                              id="checkbox"
-                              class="form__checkbox-styled"
-                            />
-                            <p class="form__checkbox-content">Remember me</p>
-                          </div>
-                          <a class="form__remember-link">Forgot Password ?</a>
-                        </div>
-                      </div>
-                    </div>
-                    <button type="submit" class="login__button main-button">
-                      Log in
-                    </button>
-                  </div>
-                  <div class="login-social">
-                    <p class="login-social-message">or continue with</p>
-                    <div class="login-social-wrap">
-                      <ul class="login-social-list">
-                        <li>
-                          <a
-                            class="login-social__link"
-                            href="#"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="facebook"
-                          >
-                            <svg class="login__icon facebook">
-                              <use
-                                xlink:href="sprite-icons.svg#icon-facebook"
-                              ></use>
-                            </svg>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="login-social__link"
-                            href="#"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="apple"
-                          >
-                            <svg class="login__icon login-apple">
-                              <use
-                                xlink:href="sprite-icons.svg#icon-apple"
-                              ></use>
-                            </svg>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="login-social__link"
-                            href="#"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="google"
-                          >
-                            <svg class="login__icon login-google">
-                              <use
-                                xlink:href="sprite-icons.svg#icon-google"
-                              ></use>
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
           </div>
 
-          <!--Footer sectoin-->
-          <footer class="footer">
-            <div class="footer__content">
-              <a class="footer__logo" href="/index.html">
-                <svg width="128" height="49">
-                  <use xlink:href="sprite-icons.svg#logo-footer"></use>
-                </svg>
-              </a>
-
-              <div class="footer__subscribe">
-                <ul class="footer__list">
-                  <li>
-                    <a
-                      class="footer__link"
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="instagram"
-                    >
-                      <svg class="footer__icon">
-                        <use xlink:href="sprite-icons.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="footer__link"
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="youtobe"
-                    >
-                      <svg class="footer__icon">
-                        <use xlink:href="sprite-icons.svg#youtobe"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="footer__link"
-                      href="https://www.facebook.com/boatssafety"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="facebook"
-                    >
-                      <svg class="footer__icon">
-                        <use xlink:href="sprite-icons.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-
-                <div class="footer__message">
-                  Subscribe to us <br />
-                  in social networks
-                </div>
-              </div>
-
-              <div class="footer__rights">
-                <ul class="footer__rights-list">
-                  <li>© The Boats all rights reserved</li>
-                  <li>Offer contract</li>
-                  <li>Privacy Policy</li>
-                </ul>
-              </div>
-            </div>
-          </footer>
+          <ul class="footer__rights-list">
+            <li>© The Boats all rights reserved</li>
+            <li>Offer contract</li>
+            <li>Privacy Policy</li>
+          </ul>
         </div>
       </div>
-    </div>
+    </footer>
+
     <script src="./js/validation.js"></script>
     <script defer src="./js/form-login.js"></script>
     <script src="./js/invisible.js"></script>

@@ -1609,57 +1609,27 @@ footer {
 }
 
 /* Login */
-.login-wrapper {
-  display: inline-flex;
-  height: 1582px;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.login-frame {
-  display: flex;
-  padding: 160px 0px 0.72px 0px;
-  justify-content: center;
-  align-items: center;
-  /* min-width: 1920px; */
-}
 .login-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 160px;
+  margin: 160px auto;
 }
 .login-content {
   display: flex;
-  width: 1920px;
   flex-direction: column;
-  align-items: center;
   gap: 100px;
+  padding: 0 114px;
 }
-.login__button {
-  width: 431px;
-  height: 62px;
-}
-
-.login__page-path {
-  display: flex;
-  width: 1691px;
-  align-items: center;
-  gap: 16px;
-}
-
 .login__page-path-home {
   font-family: var(--secondary-font);
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -0.32px;
+  letter-spacing: -0.02em;
+  text-align: left;
   width: 51px;
   height: 19px;
   transform: rotate(-0.141deg);
-  flex-shrink: 0;
   color: var(--greyGold);
-  font-feature-settings: "salt" on;
+  margin-right: 16px;
 }
 .login__page-path-home:hover,
 .login__page-path-home:focus {
@@ -1669,29 +1639,26 @@ footer {
 .login__page-path-login {
   font-family: var(--secondary-font);
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.32px;
   width: 93px;
   height: 19px;
   transform: rotate(-0.141deg);
-  flex-shrink: 0;
   color: var(--greyGold);
-  font-feature-settings: "salt" on;
 }
-
 .login__page-path-login.activ {
   color: var(--black1);
 }
-
+.login__form {
+  margin: 0 auto;
+}
 .form__row {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
 }
-
 .form__row-frame {
   display: flex;
   flex-direction: column;
@@ -1699,14 +1666,12 @@ footer {
   align-items: center;
   gap: 20px;
 }
-
 .form__row-label {
+  color: var(--black2);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 40px;
 }
-
 .form__row-gap {
   display: flex;
   width: 431px;
@@ -1714,7 +1679,6 @@ footer {
   align-items: flex-start;
   gap: 40px;
 }
-
 .form-invisible {
   display: flex;
   position: relative;
@@ -1755,9 +1719,7 @@ footer {
 }
 
 .form__remember-link {
-  font-family: var(--main-font);
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: var(--grayWarm);
@@ -1784,20 +1746,14 @@ footer {
 }
 
 .form__checkbox-content {
-  font-family: var(--main-font);
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: var(--gray-warm, #3f3f3f);
 }
 
 .login__title {
-  color: var(--black2);
-  /* Body Text/30px Text Example/Medium */
-  font-family: var(--main-font);
   font-size: 30px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
@@ -1805,11 +1761,7 @@ footer {
 .login__message {
   width: 325px;
   margin: 0;
-  color: var(--black2);
-  /* Body Text 16px Text Example/SemiBold */
-  font-family: var(--main-font);
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
@@ -1838,10 +1790,7 @@ footer {
 .form-label {
   color: var(--greyGold);
   width: 100%;
-  /* Body Text 13px Text Example/Medium */
-  font-family: var(--main-font);
   font-size: 13px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
@@ -1857,10 +1806,7 @@ footer {
 .form-control {
   color: var(--darkblue);
   width: 100%;
-  /* Body Text 16px Text Example/Regular */
-  font-family: var(--main-font);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
@@ -1902,7 +1848,9 @@ footer {
   align-items: flex-end;
   width: 100%;
 }
-
+.login__button {
+  width: 100%;
+}
 .login-social {
   display: flex;
   flex-direction: column;
@@ -1913,10 +1861,7 @@ footer {
 
 .login-social-message {
   color: var(--greyGold);
-  /* Body Text 16px Text Example/Regular */
-  font-family: var(--main-font);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
