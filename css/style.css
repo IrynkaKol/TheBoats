@@ -20,26 +20,22 @@ html {
   --main-font: "Poppins", sans-serif;
   --secondary-font: "Inter Tight", sans-serif;
 }
-
 ul,
 ol {
   list-style: none;
   padding: 0;
 }
-
 a {
   text-decoration: none;
   color: inherit;
   font: inherit;
 }
-
 input {
   border: none;
   outline: none;
   background: none;
   padding: 0;
 }
-
 h1,
 h2,
 h3,
@@ -47,12 +43,7 @@ h4,
 p,
 ul,
 ol,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
+li {
   margin: 0;
 }
 button {
@@ -72,24 +63,20 @@ h1,
 h2 {
   text-transform: uppercase;
 }
-
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
-
 img {
   max-width: 100%;
   display: block;
   height: auto;
 }
-
 button,
 textarea,
 select {
   font: inherit;
 }
-
 button,
 input[type="submit"] {
   display: inline-block;
@@ -98,7 +85,6 @@ input[type="submit"] {
   background: none;
   cursor: pointer;
 }
-
 input[type="email"] {
   display: inline-block;
   box-shadow: none;
@@ -106,12 +92,10 @@ input[type="email"] {
   background: none;
   cursor: pointer;
 }
-
 path {
   fill: inherit;
   stroke: inherit;
 }
-
 .container {
   margin: 0 auto;
   padding: 0 clamp(24px, 4px + 4vw, 105px);
@@ -120,27 +104,21 @@ path {
 .hidden {
   display: none;
 }
-
 .main-button {
   font-size: 16px;
   font-weight: 500;
-  /*line-height: 1.1;*/
   letter-spacing: -0.02em;
   text-transform: uppercase;
-
   display: flex;
   justify-content: center;
   text-align: left;
-
   border-radius: 100px;
   border: 1px solid var(--black1);
   padding: 12px 24px;
   background: var(--black1);
   color: var(--white);
 }
-
 .main-button:hover {
-  border-radius: 100px;
   border: 5px solid #777;
   background: #282828;
 }
@@ -164,7 +142,6 @@ path {
   letter-spacing: -0.02em;
   text-align: left;
   text-transform: uppercase;
-  white-space: nowrap;
 
   display: flex;
   justify-content: center;
@@ -195,7 +172,6 @@ path {
 }
 
 /* Header section */
-
 .header {
   position: relative;
 }
@@ -220,12 +196,10 @@ path {
   align-items: center;
   text-align: center;
 }
-
 .header__logo {
   width: 127px;
   height: 48px;
 }
-
 .menu__btn {
   width: 43px;
   height: 43px;
@@ -249,7 +223,6 @@ path {
   margin: 0 auto;
   background-color: white;*/
 }
-
 .menu__item {
   display: none;
   text-align: center;
@@ -284,7 +257,6 @@ path {
 
 .hero__inner {
   width: 100%;
-
   background-image: linear-gradient(
       0deg,
       rgba(36, 36, 36, 0.4) 0%,
@@ -355,7 +327,6 @@ path {
   text-align: center;
   margin-bottom: 40px;
 }
-
 .about__content {
   display: flex;
   justify-content: center;
@@ -383,7 +354,6 @@ path {
 .about__card:first-child {
   display: flex;
 }
-
 .frame {
   display: flex;
   align-items: flex-start;
@@ -424,7 +394,6 @@ path {
   letter-spacing: 0em;
   text-align: left;
 }
-
 .about__btn {
   font-family: var(--secondary-font);
   font-size: 14px;
