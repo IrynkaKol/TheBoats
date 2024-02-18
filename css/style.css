@@ -1306,18 +1306,6 @@ footer {
 }
 
 /* Registration */
-.registration-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.registration-frame {
-  display: flex;
-  padding-top: 160px;
-  justify-content: center;
-  align-items: center;
-}
 .registration-container {
   display: flex;
   flex-direction: column;
@@ -1331,26 +1319,21 @@ footer {
   align-items: center;
   gap: 100px;
 }
-
 .registration__page-path {
   display: flex;
-  width: 1691px;
   align-items: center;
   gap: 16px;
 }
 .registration__page-path-home {
   font-family: var(--secondary-font);
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.32px;
   width: 51px;
   height: 19px;
   transform: rotate(-0.141deg);
-  flex-shrink: 0;
   color: var(--greyGold);
-  font-feature-settings: "salt" on;
 }
 .registration__page-path-home:hover,
 .registration__page-path-home:focus {
@@ -1359,16 +1342,13 @@ footer {
 .registration__page-path-registration {
   font-family: var(--secondary-font);
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.32px;
   width: 93px;
   height: 19px;
   transform: rotate(-0.141deg);
-  flex-shrink: 0;
   color: var(--greyGold);
-  font-feature-settings: "salt" on;
 }
 
 .registration-form {
@@ -1385,9 +1365,7 @@ footer {
   gap: 12px;
 }
 .registration-title {
-  color: var(--Black2, #000);
-  /* Body Text/30px Text Example/Medium */
-  font-family: var(--main-font);
+  color: var(--black2);
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -1397,10 +1375,7 @@ footer {
   width: 325px;
   margin: 0;
   color: var(--black2);
-  /* Body Text 16px Text Example/SemiBold */
-  font-family: var(--main-font);
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
@@ -1421,10 +1396,7 @@ footer {
 }
 .registration__form-label {
   color: var(--gray-cold-40, rgba(21, 21, 21, 0.4));
-  /* Body Text 13px Text Example/Medium */
-  font-family: Poppins;
   font-size: 13px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
@@ -1455,10 +1427,7 @@ footer {
   align-items: flex-start;
   gap: 12px;
   color: var(--greyGold);
-  /* Body Text 13px Text Example/Medium */
-  font-family: var(--main-font);
   font-size: 13px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
@@ -1491,10 +1460,7 @@ footer {
   color: var(--darkBlue);
   display: inline-block;
   width: 100%;
-  /* Body Text 16px Text Example/Regular */
-  font-family: var(--main-font);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
@@ -1502,44 +1468,34 @@ footer {
 .form__input::-moz-placeholder {
   color: var(--darkBlue);
 }
-
 .form__input:-ms-input-placeholder {
   color: var(--darkBlue);
 }
-
 .form__input::placeholder {
   color: var(--darkBlue);
 }
-
 .form__icon {
   width: 17px;
   height: 17px;
   flex-shrink: 0;
   vertical-align: middle;
 }
-
 .form__icon-password {
   fill: #151515;
   fill-opacity: 0.4;
   flex-shrink: 0;
 }
-
 .registration__login-link:hover {
   text-decoration: underline;
 }
-
 .registration__login-link:focus {
   outline: none;
 }
-
 .registration__page-path-registration.activ {
   color: var(--black1);
 }
-
 .error-message {
-  font-family: var(--main-font);
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: var(--red);
@@ -1547,7 +1503,6 @@ footer {
 
 .success-frame {
   display: flex;
-  width: 1920px;
   flex-direction: column;
   align-items: center;
   gap: 100px;
@@ -1555,7 +1510,6 @@ footer {
 
 .success-wrap {
   display: flex;
-  width: 1691px;
   align-items: center;
   justify-content: center;
   gap: 16px;
@@ -1578,10 +1532,7 @@ footer {
   width: 428px;
   color: var(--black2);
   text-align: center;
-  /* Body Text/30px Text Example/Medium */
-  font-family: var(--main-font);
   font-size: 30px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   font-variant: all-small-caps;
@@ -1598,12 +1549,10 @@ footer {
   font-weight: 600;
   line-height: normal;
 }
-
 .icon-warning {
   width: 16px;
   height: 16px;
 }
-
 .hidden {
   display: none;
 }
@@ -1870,13 +1819,11 @@ footer {
   width: 42px;
   height: 42px;
 }
-
 .login__icon.login-google:hover,
 .login__icon.login-google:focus {
   border: 3px solid orange;
   border-radius: 50%;
 }
-
 .login__icon.login-apple {
   fill: #283544;
 }
@@ -1885,7 +1832,6 @@ footer {
   border: 3px solid orange;
   border-radius: 50%;
 }
-
 .login__icon.facebook {
   padding-top: 2px;
   fill: #0163e0;
@@ -1895,13 +1841,11 @@ footer {
   border: 3px solid orange;
   border-radius: 50%;
 }
-
 .login-social-wrap {
   display: flex;
   width: 165px;
   height: 43px;
 }
-
 .login-social-list {
   display: flex;
   justify-content: center;
