@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
-
+    <link rel="icon" type="images/x-icon" href="favicon/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600"
       rel="stylesheet"
@@ -120,178 +120,182 @@
           >
         </div>
         <form
-          class="registration-form form-container"
+          class="registration__form"
           name="main"
           id="add-form"
           method="post"
           action="#"
           novalidate
         >
-          <div class="registration-text">
-            <strong class="registration-title">Sign up</strong>
-            <p class="registration-message">
-              If you already have an account register You can
-              <a class="registration-login-link" href="login.html"
-                >Login here !</a
-              >
-            </p>
+          <div class="form__row">
+            <div class="registration-text">
+              <strong class="registration-title">Sign up</strong>
+              <p class="registration-message">
+                If you already have an account register You can
+                <a class="registration-login-link" href="login.html"
+                  >Login here !</a
+                >
+              </p>
+            </div>
+            <div class="regisrtation__wrap">
+              <div class="form-wrap">
+                <label for="inputEmail1" class="form__label">Email</label>
+                <div class="form__text-wrap">
+                  <div class="form__icon-wrap warning-email">
+                    <span class="form__text">
+                      <svg class="form__icon" width="17" height="11">
+                        <use
+                          xlink:href="./sprite-icons.svg#icon-envelope"
+                        ></use>
+                      </svg>
+
+                      <input
+                        class="form__input"
+                        id="inputEmail1"
+                        type="email"
+                        name="inputEmail1"
+                        autofocus
+                        placeholder="Enter your email address"
+                        data-placeholder="Enter your email address"
+                        autocomplete="off"
+                      />
+                    </span>
+                    <span
+                      class="icon-warning"
+                      style="display: none"
+                      id="warning-email"
+                    >
+                      <svg width="16" height="16">
+                        <use xlink:href="./sprite-icons.svg#icon-warning"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="error-message error" id="email-error"></div>
+              </div>
+
+              <div class="form-wrap">
+                <label class="form__label" for="inputUsername">Username </label>
+                <div class="form__text-wrap">
+                  <div class="form__icon-wrap warning-username">
+                    <span class="form__text">
+                      <svg class="form__icon" width="17" height="17">
+                        <use xlink:href="./sprite-icons.svg#icon-user"></use>
+                      </svg>
+
+                      <input
+                        class="form__input"
+                        id="inputUsername"
+                        type="text"
+                        name="inputUsername"
+                        placeholder="Enter your User name"
+                        data-placeholder="Enter your User name"
+                        autocomplete="off"
+                      />
+                    </span>
+                    <span style="display: none" id="warning-username">
+                      <svg width="16" height="16">
+                        <use xlink:href="./sprite-icons.svg#icon-warning"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="error-message error" id="username-error"></div>
+              </div>
+
+              <div class="form-wrap" id="inputPassword1">
+                <label class="form__label" for="passwordInput1">Password</label>
+                <div class="form__text-wrap">
+                  <div class="form__icon-wrap warning-password">
+                    <span class="form__text">
+                      <svg class="form__icon" width="17" height="17">
+                        <use xlink:href="./sprite-icons.svg#icon-padlock"></use>
+                      </svg>
+                      <input
+                        class="form__input"
+                        id="passwordInput1"
+                        type="password"
+                        name="passwordInput1"
+                        placeholder="Enter your Password"
+                        data-placeholder="Enter your Password"
+                        autocomplete="off"
+                        required
+                        minlength="6"
+                        maxlength="12"
+                        title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                      />
+                    </span>
+
+                    <span
+                      class="hide hideable-icon-1 password1-icon password-toggle-icon-inputPassword1"
+                      id="icon-passp"
+                      onclick="return passwordVisibility('inputPassword1')"
+                    ></span>
+                    <span
+                      class="icon-warning"
+                      style="display: none"
+                      id="warning-password"
+                    >
+                      <svg width="16" height="16">
+                        <use xlink:href="./sprite-icons.svg#icon-warning"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="error-message" id="password-error"></div>
+              </div>
+
+              <div class="form-wrap" id="inputPassword2">
+                <label class="form__label" for="passwordInput2"
+                  >Confirm Password</label
+                >
+                <div id="success" class="form__text-wrap">
+                  <div class="form__icon-wrap warning-password">
+                    <span class="form__text">
+                      <svg class="form__icon" width="17" height="17">
+                        <use href="./sprite-icons.svg#icon-padlock1"></use>
+                      </svg>
+
+                      <input
+                        class="form__input"
+                        id="passwordInput2"
+                        type="password"
+                        name="passwordInput2"
+                        placeholder="Confrim your Password"
+                        data-placeholder="Confrim your Password"
+                        autocomplete="off"
+                        required
+                      />
+                    </span>
+
+                    <span
+                      class="hide hideable-icon-2 password2-icon password-toggle-icon-inputPassword2"
+                      id="icon-passh"
+                      onclick="return passwordVisibility('inputPassword2')"
+                    ></span>
+
+                    <span
+                      class="icon-warning"
+                      style="display: none"
+                      id="warning-confirm"
+                    >
+                      <svg width="16" height="16">
+                        <use xlink:href="./sprite-icons.svg#icon-warning"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="error-message" id="confirm-error"></div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="registration__button main-button"
+              onsubmit="redirectToSuccessForm()"
+            >
+              sign up
+            </button>
           </div>
-          <div class="regisrtation__wrap">
-            <div class="form-wrap">
-              <label for="inputEmail1" class="form__label">Email</label>
-              <div class="form__text-wrap">
-                <div class="form__icon-wrap warning-email">
-                  <span class="form__text">
-                    <svg class="form__icon" width="17" height="11">
-                      <use xlink:href="./sprite-icons.svg#icon-envelope"></use>
-                    </svg>
-
-                    <input
-                      class="form__input"
-                      id="inputEmail1"
-                      type="email"
-                      name="inputEmail1"
-                      autofocus
-                      placeholder="Enter your email address"
-                      data-placeholder="Enter your email address"
-                      autocomplete="off"
-                    />
-                  </span>
-                  <span
-                    class="icon-warning"
-                    style="display: none"
-                    id="warning-email"
-                  >
-                    <svg width="16" height="16">
-                      <use xlink:href="./sprite-icons.svg#icon-warning"></use>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-              <div class="error-message error" id="email-error"></div>
-            </div>
-
-            <div class="form-wrap">
-              <label class="form__label" for="inputUsername">Username </label>
-              <div class="form__text-wrap">
-                <div class="form__icon-wrap warning-username">
-                  <span class="form__text">
-                    <svg class="form__icon" width="17" height="17">
-                      <use xlink:href="./sprite-icons.svg#icon-user"></use>
-                    </svg>
-
-                    <input
-                      class="form__input"
-                      id="inputUsername"
-                      type="text"
-                      name="inputUsername"
-                      placeholder="Enter your User name"
-                      data-placeholder="Enter your User name"
-                      autocomplete="off"
-                    />
-                  </span>
-                  <span style="display: none" id="warning-username">
-                    <svg width="16" height="16">
-                      <use xlink:href="./sprite-icons.svg#icon-warning"></use>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-              <div class="error-message error" id="username-error"></div>
-            </div>
-
-            <div class="form-wrap" id="inputPassword1">
-              <label class="form__label" for="passwordInput1">Password</label>
-              <div class="form__text-wrap">
-                <div class="form__icon-wrap warning-password">
-                  <span class="form__text">
-                    <svg class="form__icon" width="17" height="17">
-                      <use xlink:href="./sprite-icons.svg#icon-padlock"></use>
-                    </svg>
-                    <input
-                      class="form__input"
-                      id="passwordInput1"
-                      type="password"
-                      name="passwordInput1"
-                      placeholder="Enter your Password"
-                      data-placeholder="Enter your Password"
-                      autocomplete="off"
-                      required
-                      minlength="6"
-                      maxlength="12"
-                      title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
-                    />
-                  </span>
-
-                  <span
-                    class="hide hideable-icon-1 password1-icon password-toggle-icon-inputPassword1"
-                    id="icon-passp"
-                    onclick="return passwordVisibility('inputPassword1')"
-                  ></span>
-                  <span
-                    class="icon-warning"
-                    style="display: none"
-                    id="warning-password"
-                  >
-                    <svg width="16" height="16">
-                      <use xlink:href="./sprite-icons.svg#icon-warning"></use>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-              <div class="error-message" id="password-error"></div>
-            </div>
-
-            <div class="form-wrap" id="inputPassword2">
-              <label class="form__label" for="passwordInput2"
-                >Confirm Password</label
-              >
-              <div id="success" class="form__text-wrap">
-                <div class="form__icon-wrap warning-password">
-                  <span class="form__text">
-                    <svg class="form__icon" width="17" height="17">
-                      <use href="./sprite-icons.svg#icon-padlock1"></use>
-                    </svg>
-
-                    <input
-                      class="form__input"
-                      id="passwordInput2"
-                      type="password"
-                      name="passwordInput2"
-                      placeholder="Confrim your Password"
-                      data-placeholder="Confrim your Password"
-                      autocomplete="off"
-                      required
-                    />
-                  </span>
-
-                  <span
-                    class="hide hideable-icon-2 password2-icon password-toggle-icon-inputPassword2"
-                    id="icon-passh"
-                    onclick="return passwordVisibility('inputPassword2')"
-                  ></span>
-
-                  <span
-                    class="icon-warning"
-                    style="display: none"
-                    id="warning-confirm"
-                  >
-                    <svg width="16" height="16">
-                      <use xlink:href="./sprite-icons.svg#icon-warning"></use>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-              <div class="error-message" id="confirm-error"></div>
-            </div>
-          </div>
-          <button
-            type="submit"
-            class="registration__button main-button"
-            onsubmit="redirectToSuccessForm()"
-          >
-            sign up
-          </button>
         </form>
 
         <div id="success-message" style="display: none" class="registration">

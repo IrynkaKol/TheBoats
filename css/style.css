@@ -1307,24 +1307,27 @@ footer {
 
 /* Registration */
 .registration-container {
+  /*
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 160px;
+  gap: 160px;*/
 }
 .registration-content {
+  /*
   display: flex;
-  width: 1920px;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
+  gap: 100px;*/
 }
 .registration__page-path {
+  /*
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 16px;*/
 }
 .registration__page-path-home {
+  /*
   font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 500;
@@ -1333,13 +1336,14 @@ footer {
   width: 51px;
   height: 19px;
   transform: rotate(-0.141deg);
-  color: var(--greyGold);
+  color: var(--greyGold);*/
 }
 .registration__page-path-home:hover,
 .registration__page-path-home:focus {
   color: var(--black1);
 }
 .registration__page-path-registration {
+  /*
   font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 500;
@@ -1348,14 +1352,15 @@ footer {
   width: 93px;
   height: 19px;
   transform: rotate(-0.141deg);
-  color: var(--greyGold);
+  color: var(--greyGold);*/
 }
 
 .registration-form {
+  /*
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
+  gap: 40px;*/
 }
 .registration-text {
   display: flex;
@@ -1558,16 +1563,19 @@ footer {
 }
 
 /* Login */
-.login-container {
+.login-container,
+.registration-container {
   margin: 160px auto;
 }
-.login-content {
+.login-content,
+.registration-content {
   display: flex;
   flex-direction: column;
   gap: 100px;
   padding: 0 114px;
 }
-.login__page-path-home {
+.login__page-path-home,
+.registration__page-path-home {
   font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 500;
@@ -1585,7 +1593,8 @@ footer {
   color: var(--black1);
 }
 
-.login__page-path-login {
+.login__page-path-login,
+.registration__page-path-registration {
   font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 500;
@@ -1599,7 +1608,8 @@ footer {
 .login__page-path-login.activ {
   color: var(--black1);
 }
-.login__form {
+.login__form,
+.registration__form {
   margin: 0 auto;
 }
 .form__row {
