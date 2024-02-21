@@ -29,7 +29,7 @@ function showError(elementId, errorMessage) {
         }
 
         
-        const textWrap = inputElement.closest('.form-wrap').querySelector('.form__text-wrap');
+        const textWrap = inputElement.closest('.form-wrap').querySelector('.form-input');
         
         if (textWrap) {
             textWrap.classList.add('error');
@@ -64,7 +64,7 @@ function hideError(elementId) {
             iconWarning.style.display = 'none';
         }
 
-        const textWrap = inputElement.closest('.form-wrap').querySelector('.form__text-wrap');
+        const textWrap = inputElement.closest('.form-wrap').querySelector('.form-input');
         
         if (textWrap) {
             textWrap.classList.remove('error');
@@ -192,7 +192,7 @@ document.getElementById("add-form").addEventListener("submit", function (e) {
 
   // alert('Form is valid');
   document.getElementById("registration").style.display = "none";
-  document.getElementById("success-message").style.display = "block";
+  document.getElementById("success-message").style.display = "flex";
 });
 
 const inputs = document.querySelectorAll(".form__input");

@@ -172,38 +172,33 @@
                 <label class="form-label" for="inputPassword">Password</label>
                 <div class="form-wrap">
                   <div class="form-input">
-                    <div class="form-input-invisible">
-                      <div class="form-input-padlock">
-                        <svg class="form__icon" width="17" height="11">
-                          <use href="./sprite-icons.svg#icon-padlock"></use>
-                        </svg>
-                        <input
-                          type="password"
-                          name="inputPassword"
-                          class="form-control"
-                          id="inputPassword"
-                          placeholder="Enter your Password"
-                          data-placeholder="Enter your Password"
-                          autocomplete="off"
-                        />
-                      </div>
-                      <span
-                        class="hide hideable-icon"
-                        id="icon-pass"
-                        onclick="return togglePasswordVisibility(this)"
-                      ></span>
-                      <span
-                        class="icon-warning"
-                        style="display: none"
-                        id="warning-passwordl"
-                      >
-                        <svg width="16" height="16">
-                          <use
-                            xlink:href="./sprite-icons.svg#icon-warning"
-                          ></use>
-                        </svg>
-                      </span>
-                    </div>
+                    <svg class="form__icon" width="17" height="11">
+                      <use href="./sprite-icons.svg#icon-padlock"></use>
+                    </svg>
+                    <input
+                      type="password"
+                      name="inputPassword"
+                      class="form-control"
+                      id="inputPassword"
+                      placeholder="Enter your Password"
+                      data-placeholder="Enter your Password"
+                      autocomplete="off"
+                    />
+
+                    <span
+                      class="hide hideable-icon"
+                      id="icon-pass"
+                      onclick="return togglePasswordVisibility(this)"
+                    ></span>
+                    <span
+                      class="icon-warning"
+                      style="display: none"
+                      id="warning-passwordl"
+                    >
+                      <svg width="16" height="16">
+                        <use xlink:href="./sprite-icons.svg#icon-warning"></use>
+                      </svg>
+                    </span>
                   </div>
                   <div class="error-message" id="passwordl-error"></div>
                 </div>
