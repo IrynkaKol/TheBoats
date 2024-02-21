@@ -1168,7 +1168,7 @@ footer {
   font-size: 14px;
   font-family: var(--secondary-font);
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--greyGold);
@@ -1596,9 +1596,18 @@ footer {
   }
   .login-content {
     padding: 0 43px;
+    gap: 80px;
   }
   .login__form {
     padding: 0 158px;
+  }
+  .login__title {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
+  .login__message {
+    padding-right: 100px;
   }
 }
 @media (min-width: 834px) and (max-width: 1919px) {
@@ -1947,7 +1956,16 @@ footer {
     line-height: 1.1;
     gap: 121px;
   }
+  .login-content {
+    gap: 100px;
+  }
   .login__form {
-    padding: 0 700px;
+    padding: 0 702px;
+  }
+  .login__title {
+    font-size: 30px;
+  }
+  .login__button {
+    margin-bottom: 20px;
   }
 }
