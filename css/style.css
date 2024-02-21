@@ -1580,6 +1580,7 @@ footer {
   height: 17px;
   flex-shrink: 0;
   vertical-align: middle;
+  margin-right: 12px;
 }
 .form__icon-password {
   fill: #151515;
@@ -1843,8 +1844,8 @@ footer {
 }
 
 .form-control {
+  width: 100%;
   color: var(--darkblue);
-
   font-size: 16px;
   font-weight: 400;
 }
@@ -1852,7 +1853,6 @@ footer {
 .form-input {
   display: flex;
   align-items: center;
-  gap: 12px;
   width: 100%;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--black2);
