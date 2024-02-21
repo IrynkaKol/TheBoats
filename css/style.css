@@ -1707,7 +1707,6 @@ footer {
 .login__title {
   font-size: 24px;
 
-  line-height: 36px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -1728,19 +1727,17 @@ footer {
   text-decoration: underline;
 }
 .login__form {
-}
-.form__row {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
 }
+
 .form__row-frame {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
+  width: 100%;
 }
 .form__row-label {
   color: var(--black2);
@@ -1753,6 +1750,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
+  margin-bottom: 20px;
 }
 .form-invisible {
   display: flex;
@@ -1784,6 +1782,7 @@ footer {
   justify-content: space-between;
   gap: 15px;
   align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .form__checkbox {
@@ -1824,6 +1823,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+  width: 100%;
 }
 
 .form-label {
@@ -1844,10 +1844,9 @@ footer {
 
 .form-control {
   color: var(--darkblue);
-  width: 100%;
+
   font-size: 16px;
   font-weight: 400;
-  line-height: normal;
 }
 
 .form-input {
@@ -1889,6 +1888,7 @@ footer {
 }
 .login__button {
   width: 100%;
+  margin-bottom: 40px;
 }
 .login-social {
   display: flex;
