@@ -20,6 +20,7 @@
   </head>
   <body>
     <!--Header section-->
+    <div class="menu__close"></div>
     <header class="header">
       <div class="header__container">
         <div class="header__wrap">
@@ -30,83 +31,88 @@
           </a>
           <nav class="menu">
             <div class="menu__buttons">
-              <button class="menu__reserve hidden main-button">reserve</button>
+              <button class="menu__reserve main-button hidden">reserve</button>
               <button class="menu__btn" type="menu">
                 <span></span><span></span><span></span>
               </button>
             </div>
+
             <ul class="menu__list">
-              <li class="menu__item">
-                <a class="link menu__link" href="#about"
-                  >In-Person Boat Monitoring | IPM</a
-                >
+              <li class="menu__list-burger-btn">
+                <div>
+                  <button
+                    class="menu__btn-main main-button"
+                    type="submit"
+                    onclick="redirectToLogin()"
+                  >
+                    log in
+                  </button>
+                  <button class="burger-icon"></button>
+                </div>
               </li>
-              <li class="menu__item">
-                <a class="link menu__link" href="#suites">Try or buy</a>
+              <li>
+                <ul class="menu__nav">
+                  <li class="menu__item">
+                    <a class="link menu__link" href="#about"
+                      >In-Person Boat Monitoring | IPM</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a class="link menu__link" href="#suites">Try or buy</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="link menu__link" href="#contacts">Contacts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="link menu__link" href="#">Your gallery</a>
+                  </li>
+                </ul>
               </li>
-              <li class="menu__item">
-                <a class="link menu__link" href="#contacts">Contacts</a>
-              </li>
-              <li class="menu__item">
-                <a class="link menu__link" href="#">Your gallery</a>
+              <li>
+                <ul class="header-social">
+                  <li>
+                    <a
+                      class="header-social__link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"
+                    >
+                      <svg class="icon">
+                        <use xlink:href="sprite-icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="header-social__link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="youtobe"
+                    >
+                      <svg class="icon">
+                        <use xlink:href="sprite-icons.svg#youtobe"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="header-social__link"
+                      href="https://www.facebook.com/boatssafety"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"
+                    >
+                      <svg class="icon">
+                        <use xlink:href="sprite-icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
-
-          <ul class="header-social hidden">
-            <li>
-              <a
-                class="header-social__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="share"
-              >
-                <svg class="icon">
-                  <use xlink:href="sprite-icons.svg#share"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="header-social__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="instagram"
-              >
-                <svg class="icon">
-                  <use xlink:href="sprite-icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="header-social__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="youtobe"
-              >
-                <svg class="icon">
-                  <use xlink:href="sprite-icons.svg#youtobe"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="header-social__link"
-                href="https://www.facebook.com/boatssafety"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="facebook"
-              >
-                <svg class="icon">
-                  <use xlink:href="sprite-icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </header>
@@ -682,9 +688,9 @@
         </div>
       </div>
     </footer>
-
+    <script src="./js/burger-menu.js"></script>
     <script src="./js/navigation.js"></script>
-    <script type="module" src="./js/learn-more.js"></script>
-    <script type="module" src="./js/slider.js"></script>
+    <script src="./js/learn-more.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
