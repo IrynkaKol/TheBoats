@@ -195,7 +195,7 @@ document.getElementById("add-form").addEventListener("submit", function (e) {
   document.getElementById("success-message").style.display = "flex";
 });
 
-const inputs = document.querySelectorAll(".form__input");
+const inputs = document.querySelectorAll(".form-control");
 inputs.forEach((input) => {
   input.addEventListener("focus", function () {
     this.setAttribute("placeholder", "");

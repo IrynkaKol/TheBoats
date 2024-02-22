@@ -2,7 +2,7 @@
 function passwordVisibility(passwordId) {
     let inputPass = document
       .getElementById(passwordId)
-      .getElementsByClassName('form__input')[0];
+      .getElementsByClassName('form-control')[0];
     let hideButton = document.querySelector(`#${passwordId} .hide`);
   
     if (inputPass) {
