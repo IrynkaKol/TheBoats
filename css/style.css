@@ -109,9 +109,8 @@ path {
   font-weight: 500;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  display: flex;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   border-radius: 100px;
   border: 1px solid var(--black1);
   padding: 12px 24px;
@@ -670,13 +669,11 @@ path {
 }
 
 /* Contacts section */
-
 .contacts__container {
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-
 .contacts__title-wrap {
   display: flex;
   flex-direction: column;
@@ -1209,37 +1206,8 @@ footer {
   font-weight: 600;
   line-height: normal;
 }
-/*
-.hidden {
-  display: none;
-}*/
 
 /* Login */
-
-/*
-.form__row-label {
-  color: var(--black2);
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}*/
-
-/*
-.form__label {
-  color: var(--greyGold);
-  
-  font-size: 13px;
-  font-weight: 500;
-  
-}*/
-
-/*
-.form__frame-down {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}*/
 
 .form__remember {
   display: flex;
@@ -1279,11 +1247,6 @@ footer {
   line-height: normal;
   color: var(--gray-warm, #3f3f3f);
 }
-
-/*
-.form-input-width {
-  width: 100%;
-}*/
 
 .login-social {
   display: flex;
@@ -1504,20 +1467,27 @@ footer {
   .footer__container {
     padding: 24px 42px;
   }
+  .registration-content,
   .login-content {
     padding: 0 43px;
     gap: 80px;
   }
+  .registration__form,
   .login__form {
     padding: 0 158px;
   }
+  .registration__title,
   .login__title {
     font-size: 24px;
     line-height: 1.5;
     letter-spacing: 0em;
   }
+
   .login__message {
-    padding-right: 100px;
+    padding-right: 160px;
+  }
+  .registration__message {
+    padding-right: 150px;
   }
 }
 @media (min-width: 834px) and (max-width: 1919px) {
@@ -1866,16 +1836,26 @@ footer {
     line-height: 1.1;
     gap: 121px;
   }
+  .registration-content,
   .login-content {
     gap: 100px;
   }
+  .registration__form,
   .login__form {
     padding: 0 702px;
   }
+  .registration__title,
   .login__title {
     font-size: 30px;
   }
+  .registration__button,
   .login__button {
     margin-bottom: 20px;
+  }
+  .login__message {
+    padding-right: 100px;
+  }
+  .registration__message {
+    padding-right: 100px;
   }
 }
