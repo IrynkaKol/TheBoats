@@ -954,10 +954,10 @@ footer {
   letter-spacing: 0em;
   text-align: left;
 }
+/*
 .registration__message,
 .login__message {
-  padding-right: 20px;
-}
+}*/
 .registration__login-link,
 .login__login-link {
   color: #0c21c1;
@@ -1115,7 +1115,6 @@ footer {
 .registration__page-path-registration.activ {
   color: var(--black1);
 }
-
 
 .success-frame {
   border-radius: 20px;
@@ -1411,13 +1410,6 @@ footer {
     font-size: 24px;
     line-height: 1.5;
     letter-spacing: 0em;
-  }
-
-  .login__message {
-    padding-right: 160px;
-  }
-  .registration__message {
-    padding-right: 150px;
   }
   .success-frame {
     margin: 0 158px;
@@ -1786,12 +1778,7 @@ footer {
   .login__button {
     margin-bottom: 20px;
   }
-  .login__message {
-    padding-right: 100px;
-  }
-  .registration__message {
-    padding-right: 100px;
-  }
+
   .success-frame {
     margin: 0 702px;
     padding: 80px 55px;
