@@ -4,7 +4,7 @@ let count = 0;
 let width;
 
 function init() {
-console.log('resize')
+/*console.log('resize')*/
 
 width = document.querySelector('.about__slider').offsetWidth;
 
@@ -20,6 +20,7 @@ rollSlider()
 
 
  window.addEventListener('resize', init);
+ window.addEventListener('DOMContentLoaded', init);
  init ()
 
  document.querySelector('.about__slider-right').addEventListener('click', function(){
