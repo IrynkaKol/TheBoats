@@ -292,42 +292,31 @@
                 </div>
               </div>
             </div>
-            <button
-              type="submit"
-              class="registration__button main-button"
-              onsubmit="redirectToSuccessForm()"
-            >
+
+            <button type="submit" class="registration__button main-button">
               sign up
             </button>
           </div>
         </form>
-
-        <div id="success-message" style="display: none" class="registration">
-          <div class="registration__container">
-            <div class="success-frame">
-              <div class="registration__page-path">
-                <a class="registration__page-path-home" href="index.html"
-                  >Home /</a
-                >
-                <a class="registration__page-path-registration activ" href="#"
-                  >Success form</a
-                >
-              </div>
-              <div class="">
-                <div class="success-text">
-                  <div class="success-title">Success!</div>
-                  <span>
-                    <svg width="64" height="64">
-                      <use href="./sprite-icons.svg#icon-check"></use>
-                    </svg>
-                  </span>
-                  <p class="success-message">
-                    Congratulations, you have successfully logged into the
-                    system!
-                  </p>
-                </div>
-              </div>
-            </div>
+      </div>
+    </div>
+    <div id="success-message" class="registration-container hidden">
+      <div class="registration-content">
+        <div class="registration__page-path">
+          <a class="registration__page-path-home" href="index.html">Home /</a>
+          <a class="registration__page-path-registration activ" href="#"
+            >Registration</a
+          >
+        </div>
+        <div class="success-frame">
+          <div class="success-title">Success!</div>
+          <span>
+            <svg width="64" height="64">
+              <use href="./sprite-icons.svg#icon-check"></use>
+            </svg>
+          </span>
+          <div class="success-message">
+            Congratulations, you have successfully logged into the system!
           </div>
         </div>
       </div>

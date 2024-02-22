@@ -1070,28 +1070,12 @@ footer {
   line-height: normal;
   color: var(--red);
 }
-/*
-.registration__input-container {
-  border: 3px solid yellow;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-}*/
-
 .registration__button,
 .login__button {
   width: 100%;
   margin-bottom: 40px;
   margin-top: 40px;
-} /*
-.regisrtation__wrap {
-  display: flex;
-  width: 431px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
-}*/
+}
 
 .form__text-wrap {
   display: flex;
@@ -1109,33 +1093,7 @@ footer {
   align-items: center;
   gap: 12px;
 }
-/*
-.form__icon-wrap {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  gap: 200px;
-}*/
-/*
-.form__input {
-  color: var(--darkBlue);
-  display: inline-block;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-}
 
-.form__input::-moz-placeholder {
-  color: var(--darkBlue);
-}
-.form__input:-ms-input-placeholder {
-  color: var(--darkBlue);
-}
-.form__input::placeholder {
-  color: var(--darkBlue);
-}
-*/
 .form__icon {
   width: 17px;
   height: 17px;
@@ -1158,53 +1116,25 @@ footer {
   color: var(--black1);
 }
 
+
 .success-frame {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 100px;
-}
-
-.success-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.success-text {
-  display: flex;
-  width: 271px;
-  padding: 80px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
   border-radius: 20px;
   border: 1px solid var(--black1);
-  background: var(--beige);
+  padding: 80px 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
+  font-weight: 600;
+  letter-spacing: 0em;
 }
 
 .success-title {
-  width: 428px;
-  color: var(--black2);
-  text-align: center;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: normal;
-  font-variant: all-small-caps;
+  font-size: 24px;
 }
 
 .success-message {
-  width: 349px;
-  margin: 0;
-  color: var(--black2);
-  text-align: center;
-  font-family: var(--main-font);
   font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
 }
 
 /* Login */
@@ -1488,6 +1418,10 @@ footer {
   }
   .registration__message {
     padding-right: 150px;
+  }
+  .success-frame {
+    margin: 0 158px;
+    padding: 80px 55px;
   }
 }
 @media (min-width: 834px) and (max-width: 1919px) {
@@ -1857,5 +1791,13 @@ footer {
   }
   .registration__message {
     padding-right: 100px;
+  }
+  .success-frame {
+    margin: 0 702px;
+    padding: 80px 55px;
+  }
+  .success-title {
+    font-weight: 500;
+    font-size: 30px;
   }
 }

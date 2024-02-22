@@ -192,7 +192,8 @@ document.getElementById("add-form").addEventListener("submit", function (e) {
 
   // alert('Form is valid');
   document.getElementById("registration").style.display = "none";
-  document.getElementById("success-message").style.display = "flex";
+  document.getElementById("success-message").style.display = "block";
+ 
 });
 
 const inputs = document.querySelectorAll(".form-control");
