@@ -618,7 +618,6 @@ path {
 .suite__text-info {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   gap: 12px;
 }
@@ -657,7 +656,8 @@ path {
   text-align: center;
 }
 
-.suite__text-info .suites__text-item::before {
+.suite__text-info .suites__text-item::before,
+.suite__text-info-desktop .suites__text-item::before {
   content: "•";
   margin-right: 5px;
 }
@@ -1423,6 +1423,7 @@ footer {
     display: flex;
     gap: 8px;
     flex-direction: column;
+    min-width: 196px;
   }
   .suites__tariff-header {
     text-align: left;
@@ -1658,6 +1659,9 @@ footer {
     gap: 38px;
     margin-bottom: 112px;
     white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .suites__text-item {
     font-size: 28px;
