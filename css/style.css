@@ -230,10 +230,10 @@ path {
 .burger-icon {
   width: 34px;
   height: 34px;
-  position: absolute;
+  /*position: absolute;
   top: 58px;
   right: 64px;
-  z-index: 10;
+  z-index: 10;*/
   border-radius: 50%;
   border: 1px solid black;
   display: flex;
@@ -263,13 +263,7 @@ path {
 
 .menu__list {
   transform: translateX(-100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 80px;
-  align-items: center;
-  padding: 58px 64px;
-  /*max-width: 308px;*/
+  padding: 58px 0;
   position: absolute;
   z-index: 5;
   top: 0;
@@ -280,10 +274,23 @@ path {
   background: var(--beige);
   box-shadow: 0px 3px 14px 0px #8b8b8b73;
 
-  transition: transform 3s ease;
+  transition: transform 2s ease;
 }
 .menu__list.menu__list-open {
   transform: translateX(0);
+}
+.menu__list-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+
+  max-width: 180px;
+  margin: 0 auto;
+}
+.menu__list-burger-btn {
+  display: flex;
+  justify-content: space-between;
 }
 .menu__nav {
   display: flex;
@@ -291,12 +298,7 @@ path {
   align-items: center;
   gap: 24px;
 }
-.menu__list-burger-btn {
-  margin-right: auto;
-}
-.menu__btn-wrap {
-  display: flex;
-}
+
 .menu__btn-main {
   font-size: 12px;
   padding: 9px 22px;
@@ -320,6 +322,7 @@ path {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   gap: 10px;
 }
 .icon {
@@ -1267,6 +1270,10 @@ footer {
   .menu__reserve.hidden {
     display: flex;
   }
+  .burger-icon {
+    right: 126px;
+  }
+
   .hero__container {
     min-height: 462px;
   }
@@ -1493,10 +1500,13 @@ footer {
     display: none;
   }
   .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     left: auto;
     transform: none;
-    width: auto;
+
     margin: 0;
     background-color: transparent;
     border: none;
@@ -1506,6 +1516,12 @@ footer {
     box-shadow: none;
     border-radius: none;
     transition: none;
+  }
+  .menu__list-wrap {
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 195px;
   }
   .menu__nav {
     flex-direction: row;
@@ -1517,6 +1533,7 @@ footer {
   }
   .header-social {
     height: 36px;
+    gap: 20px;
   }
   .header-social.hidden {
     display: flex;
