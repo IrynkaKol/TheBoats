@@ -610,7 +610,7 @@ path {
   display: flex;
   gap: 37px;
   width: 100%;
-  padding: 20px;
+  padding: 13px 20px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -622,7 +622,9 @@ path {
 .suites__header {
   display: flex;
   flex-direction: column;
-  padding: 0 62px;
+  justify-content: flex-end;
+  min-height: 72px;
+
   gap: 37px;
 }
 .suites__tariff-header {
