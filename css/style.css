@@ -194,10 +194,6 @@ path {
   align-items: center;
   text-align: center;
 }
-.header__logo {
-  width: 127px;
-  height: 48px;
-}
 .menu__close {
   display: none;
   position: fixed;
@@ -296,8 +292,6 @@ path {
   left: 80px;
 }
 .menu__item {
-  /*display: none;*/
-
   gap: 10px;
   font-size: 14px;
   text-align: center;
@@ -954,10 +948,7 @@ footer {
   letter-spacing: 0em;
   text-align: left;
 }
-/*
-.registration__message,
-.login__message {
-}*/
+
 .registration__login-link,
 .login__login-link {
   color: #0c21c1;
@@ -1248,9 +1239,6 @@ footer {
     min-height: 85px;
   }
 
-  .header__logo {
-    height: 64px;
-  }
   .header__logo svg {
     height: 100%;
     width: 170px;
@@ -1478,7 +1466,7 @@ footer {
     justify-content: center;
     gap: 0 195px;
   }
-  .header__logo {
+  .header__logo svg {
     width: 255px;
   }
   .menu__buttons {
