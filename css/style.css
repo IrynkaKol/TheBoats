@@ -262,7 +262,7 @@ path {
 }
 
 .menu__list {
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,7 +283,7 @@ path {
   transition: transform 1s ease;
 }
 .menu__list.menu__list-open {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 .menu__nav {
   display: flex;
