@@ -1626,7 +1626,6 @@ footer {
   }
   .suites__card {
     flex-basis: calc(100% / 2 - 30px);
-    min-width: 645px;
     padding: 140px;
     gap: 0;
   }
