@@ -606,7 +606,6 @@ path {
 .suites__card {
   flex-basis: 100%;
 
-  min-width: 343px;
   display: flex;
   gap: 37px;
   width: 100%;
@@ -1665,6 +1664,7 @@ footer {
     flex-basis: calc(100% / 2 - 30px);
     padding: 140px;
     gap: 0;
+    min-width: 343px;
   }
 
   .suites__tariff {
