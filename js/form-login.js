@@ -160,7 +160,7 @@ document
 
     
   });
-
+/*
 const inputs = document.querySelectorAll(".form-control");
 inputs.forEach((input) => {
   input.addEventListener("focus", function () {
@@ -176,4 +176,4 @@ inputs.forEach((input) => {
   input.addEventListener("change", function () {
     validateField(this.id, this.value);
   });
-});
+});*/

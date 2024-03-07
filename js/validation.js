@@ -23,6 +23,8 @@ function validateUsername(username) {
 }
 
 
+
+
 function validatePassword(password) {
     
     const passwordPattern = /^(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,12}$/;

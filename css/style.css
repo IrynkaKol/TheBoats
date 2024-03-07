@@ -21,7 +21,8 @@ html {
   --secondary-font: "Inter Tight", sans-serif;
 }
 ul,
-ol {
+ol,
+li {
   list-style: none;
   padding: 0;
 }
@@ -46,6 +47,7 @@ ol,
 li {
   margin: 0;
 }
+
 button {
   padding: 0;
   border: none;
@@ -230,10 +232,6 @@ path {
 .burger-icon {
   width: 34px;
   height: 34px;
-  /*position: absolute;
-  top: 58px;
-  right: 64px;
-  z-index: 10;*/
   border-radius: 50%;
   border: 1px solid black;
   display: flex;
@@ -1088,17 +1086,6 @@ footer {
   margin-top: 40px;
 }
 
-.form__text-wrap {
-  display: flex;
-  width: 100%;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--black2);
-}
-
-.form__text-wrap.error {
-  border-bottom: 1px solid var(--red);
-}
-
 .form__text {
   display: flex;
   align-items: center;
@@ -1137,6 +1124,7 @@ footer {
   gap: 40px;
   font-weight: 600;
   letter-spacing: 0em;
+  margin-bottom: 100px;
 }
 
 .success-title {
@@ -1270,6 +1258,9 @@ footer {
   }
   .menu__reserve.hidden {
     display: flex;
+
+    line-height: 1.1;
+    text-align: left;
   }
   .burger-icon {
     right: 126px;
@@ -1426,6 +1417,7 @@ footer {
   .success-frame {
     margin: 0 158px;
     padding: 80px 55px;
+    margin-bottom: 120px;
   }
 }
 @media (min-width: 834px) and (max-width: 1919px) {
@@ -1810,6 +1802,7 @@ footer {
   .success-frame {
     margin: 0 702px;
     padding: 80px 55px;
+    margin-bottom: 160px;
   }
   .success-title {
     font-weight: 500;

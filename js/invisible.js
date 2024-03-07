@@ -1,7 +1,7 @@
 function togglePasswordVisibility(target) {
   let input = document.getElementById("inputPassword");
 
-  if (input.getAttribute("type") == "password") {
+  if (input.getAttribute("type") === "password") {
     target.classList.add("show");
     input.setAttribute("type", "text");
   } else {
